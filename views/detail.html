@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>{{title}}</title>
+		<link rel="stylesheet" type="text/css" href="css/top-head.css" />
+		<link rel="stylesheet" type="text/css" href="css/head-nav.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--————————————————————————————————————top-head————————————————————————————————————————————————————-->
+		<nav>
+			<div id="shurtNav">
+				<ul id="shurtNavLeft">
+					<li><i class="iconfont"></i>
+						<a href="/main">京东首页</a>
+					</li>
+					<li class="select-li" id="selectProvice"><i class="iconfont"></i>
+						<a href="#">上海</a>
+						<div id="showProvice" class="down-div nav-downbox-shadow">
+							<div>
+								<div class="ui-areamini-content-list">
+									<div class="item">
+										<a data-id="1" href="javascript:void(0)" class="selected">北京</a>
+									</div>
+									<div class="item">
+										<a data-id="2" href="javascript:void(0)">上海</a>
+									</div>
+									<div class="item">
+										<a data-id="3" href="javascript:void(0)">天津</a>
+									</div>
+									<div class="item">
+										<a data-id="4" href="javascript:void(0)">重庆</a>
+									</div>
+									<div class="item">
+										<a data-id="5" href="javascript:void(0)">河北</a>
+									</div>
+									<div class="item">
+										<a data-id="6" href="javascript:void(0)">山西</a>
+									</div>
+									<div class="item">
+										<a data-id="7" href="javascript:void(0)">河南</a>
+									</div>
+									<div class="item">
+										<a data-id="8" href="javascript:void(0)">辽宁</a>
+									</div>
+									<div class="item">
+										<a data-id="9" href="javascript:void(0)">吉林</a>
+									</div>
+									<div class="item">
+										<a data-id="10" href="javascript:void(0)">黑龙江</a>
+									</div>
+									<div class="item">
+										<a data-id="11" href="javascript:void(0)">内蒙古</a>
+									</div>
+									<div class="item">
+										<a data-id="12" href="javascript:void(0)">江苏</a>
+									</div>
+									<div class="item">
+										<a data-id="13" href="javascript:void(0)">山东</a>
+									</div>
+									<div class="item">
+										<a data-id="14" href="javascript:void(0)">安徽</a>
+									</div>
+									<div class="item">
+										<a data-id="15" href="javascript:void(0)">浙江</a>
+									</div>
+									<div class="item">
+										<a data-id="16" href="javascript:void(0)">福建</a>
+									</div>
+									<div class="item">
+										<a data-id="17" href="javascript:void(0)">湖北</a>
+									</div>
+									<div class="item">
+										<a data-id="18" href="javascript:void(0)">湖南</a>
+									</div>
+									<div class="item">
+										<a data-id="19" href="javascript:void(0)">广东</a>
+									</div>
+									<div class="item">
+										<a data-id="20" href="javascript:void(0)">广西</a>
+									</div>
+									<div class="item">
+										<a data-id="21" href="javascript:void(0)">江西</a>
+									</div>
+									<div class="item">
+										<a data-id="22" href="javascript:void(0)">四川</a>
+									</div>
+									<div class="item">
+										<a data-id="23" href="javascript:void(0)">海南</a>
+									</div>
+									<div class="item">
+										<a data-id="24" href="javascript:void(0)">贵州</a>
+									</div>
+									<div class="item">
+										<a data-id="25" href="javascript:void(0)">云南</a>
+									</div>
+									<div class="item">
+										<a data-id="26" href="javascript:void(0)">西藏</a>
+									</div>
+									<div class="item">
+										<a data-id="27" href="javascript:void(0)">陕西</a>
+									</div>
+									<div class="item">
+										<a data-id="28" href="javascript:void(0)">甘肃</a>
+									</div>
+									<div class="item">
+										<a data-id="29" href="javascript:void(0)">青海</a>
+									</div>
+									<div class="item">
+										<a data-id="30" href="javascript:void(0)">宁夏</a>
+									</div>
+									<div class="item">
+										<a data-id="31" href="javascript:void(0)">新疆</a>
+									</div>
+									<div class="item">
+										<a data-id="52993" href="javascript:void(0)">港澳</a>
+									</div>
+									<div class="item">
+										<a data-id="32" href="javascript:void(0)">台湾</a>
+									</div>
+									<div class="item">
+										<a data-id="84" href="javascript:void(0)">钓鱼岛</a>
+									</div>
+									<div class="item">
+										<a data-id="53283" href="javascript:void(0)">海外</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id="shurtNavRight">
+					<li>
+						{{if user}}
+						<a href="#" class="strong1" style="color: red;">{{user.name}}</a>
+						{{else}}
+						<a href="/tologin" class="link-login">你好，请登录</a>&nbsp;&nbsp;
+						<a href="/toregister" style="color: red;">免费注册</a>
+						{{/if}}
+
+					</li>
+					<li class="spacer"></li>
+					<li class="fore2">
+						<div>
+							<a target="_top" href="">我的订单</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="select-li">
+						<div id='myNavJD'>
+							<a target="_top" href="">我的京东</a><i class="iconfont"></i>
+						</div>
+						<div id="myJDitems" class="down-div nav-downbox-shadow">
+							<div class="my-item">
+								<div>
+									<a href="">待处理</a>
+								</div>
+								<div>
+									<a href="">消息</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">返修退订货</a>
+								</div>
+								<div>
+									<a href="">我的回答</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">降价商品</a>
+								</div>
+								<div>
+									<a href="">我的关注</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">我的京豆</a>
+								</div>
+								<div>
+									<a href="">我的优惠券</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">我的白条</a>
+								</div>
+								<div>
+									<a href="">我的理财</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li>
+						<div class="div">
+							<a target="_top" href="">京东会员</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore5">
+						<div>
+							<a target="_top" href="">企业采购</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="select-li">
+						<div id="myCostomServer">
+							<a href="#">客户服务<i class="iconfont"></i></a>
+						</div>
+						<div id="myCustomItems" class="down-div nav-downbox-shadow">
+							<div style="color: black;">
+								客户
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">帮助中心</a>
+								</div>
+								<div>
+									<a href="">售后服务</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">在线客服</a>
+								</div>
+								<div>
+									<a href="">意见建议</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">电话客服</a>
+								</div>
+								<div>
+									<a href="">客服邮箱</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">金融咨询</a>
+								</div>
+								<div>
+									<a href="">销全球售</a>
+								</div>
+							</div>
+							<div class="divice-hr"></div>
+							<div style="color: black;">
+								商户
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">销全球售</a>
+								</div>
+								<div>
+									<a href="">京东商学院</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">商家后台</a>
+								</div>
+								<div>
+									<a href="">京麦工作台</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">商家帮助</a>
+								</div>
+								<div>
+									<a href="">规则平台</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="select-li">
+						<div id="myNetNav">
+							<a href="#">网站导航<i class="iconfont"></i></a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li>
+						<div>
+							<a href="#">手机京东</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="myNetItems">
+			<div class="net-fore1 float-left">
+				<div>特色主题</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a target="_top">发现好货</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东预售</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东金融</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东试用</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">全球售</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">优惠券</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">闪购</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东会员</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">秒杀</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">定期送</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">装机大师</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">新奇特</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">企业金融服务</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">礼品购</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">智能馆</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">0元评测</a>
+					</div>
+					<div class="fore-item">
+						<a href="https://jr.jd.com/buy/index" target="_top">In货推荐</a>
+					</div>
+					<div class="fore-item">
+						<a href="https://sale.jd.com/act/3je8ZTCxNl6SusId.html" target="_top">北京老字号</a>
+					</div>
+					<div class="fore-item">
+						<a href="https://what.jd.com/" target="_top">买什么</a>
+					</div>
+				</div>
+			</div>
+			<div class="net-fore2 float-left">
+				<div>行业频道</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a href="" target="_top">服装城</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">家用电器</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">电脑办公</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">手机</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">美妆馆</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">食品</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">智能数码</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">母婴</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">家装城</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">运动户外</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">整车</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">图书</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">农资频道</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东智能</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">玩3C</a>
+					</div>
+				</div>
+			</div>
+			<div class="net-fore3 float-left">
+				<div>生活服务</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a href="" target="_top">京东众筹</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">白条</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东金融App</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东小金库</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">理财</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">话费</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">旅行</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">彩票</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">游戏</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">机票酒店</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">电影票</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">水电煤</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东到家</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东微联</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东众测</a>
+					</div>
+				</div>
+			</div>
+			<div class="net-fore4 float-left">
+				<div>更多精选</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a href="" target="_top">京东社区</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东通信</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">在线读书</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东E卡</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">智能社区</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">游戏社区</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京友邦</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">合作招商</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">企业采购</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">服务市场</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">乡村招募</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">校园加盟</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">办公生活馆</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">知识产权维权</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">English Site</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--————————————————————————————————————————————————————————————————————————————————————————-->
+		<div id="heand-nav-box">
+			<div id="head-nav">
+				<div class="head-nav-part1">
+					<a href="" class="head-nav-logo"><img class="full-heigh-img" src="img/img-iocn/jdlogo-201705-@2x.png" /></a>
+					<a class="btn-more-sort" href="">更多分类&nbsp;<img src="img/img-iocn/right-@1x.png" /> </a>
+				</div>
+				<div class="head-nav-part2">
+					<div class="search"><input class="input-search" type="text" name="" id="" value="" />
+						<a class="btn-search">搜全站</a>
+						<a class="btn-search" style="background-color:rgb(71, 78, 92);">搜本店</a>
+					</div>
+					<div class="search-down-a">
+						<a>吸尘器</a>
+						<a>吸尘器</a>
+						<a>净化器</a>
+						<a>扫地机</a>
+						<a>挂烫机</a>
+					</div>
+				</div>
+				<div class="head-nav-part3">
+					<div class="icon-left"></div>
+					<div>
+						<a href="">我的购物车</a>
+					</div>
+					<div class="icon-right">&gt;</div>
+				</div>
+			</div>
+			<div id="head-gif-box">
+				<div class="head-gif">
+					<img class="full-heigh-img" src="img/img-bg/5956f6fcn30de09c4.gif" />
+				</div>
+			</div>
+			<div id="shoppingNav" class="nav-title">
+				<div class="center-box">
+					<ul class="nav-title-item">
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">全部分类</a>
+						</li>
+						<li>
+							<a href="">热销爆款</a>
+						</li>
+						<li>
+							<a href="">落地扇</a>
+						</li>
+						<li>
+							<a href="">空调扇</a>
+						</li>
+						<li>
+							<a href="">转页扇</a>
+						</li>
+						<li>
+							<a href="">塔扇</a>
+						</li>
+						<li>
+							<a href="">台扇</a>
+						</li>
+						<div class="shopping-nav-search">
+							<input type="text" name="" id="" value="" />
+							<a href="">搜索</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="MainBody">
+			<div id="good-title" class="nav-title" style="background-color:rgb(242, 242, 242);">
+				<div class="center-box">
+					<div>
+						<a href="">家用电器</a>
+						<span>></span>
+						<a href="">生活电器</a>
+						<span>></span>
+						<a href="">电风扇</a>
+						<span>></span>
+						<a href="">康佳（KONKA）</a>
+						<span>></span>
+						<a href="">康佳KF-40LY01</a>
+					</div>
+					<div>
+						<a href="">康佳两季品旗舰店</a>
+						<img style="width: 14px; vertical-align: middle;" src="img/img-iocn/sprite-gys-im.gif" />
+						<a href="">联系供应商</a>
+						<i class="jimi"></i>
+						<a href="">JIMI</a>
+						<i class="focus"></i>
+						<a href="">关注店铺</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="good-show">
+				<div class="good-show-pic">
+					<div class="show-pic-box">
+						<img id="preview" class="full-width-img" jqimg="images/5757e77dn5ba4877c_005.jpg" src="img/img-good/5757e77dn5ba4877c.jpg" />
+						<a href=""><img class="video-icon" src="img/img-iocn/屏幕快照 2017-07-01 下午3.09.14.png" /></a>
+						<img class="mark-icon" src="img/img-good/5631fb7fnd9edc7a4.png" />
+
+					</div>
+					<div class="lunbo">
+						<i class="toLeft"></i>
+						<div class="lunbo-main-body">
+							<ul>
+								<li><img class="full-heigh-img full-width-img" src="img/img-good/5757e77dn5ba4877c_002.jpg" alt="" /></li>
+								<li><img class="full-heigh-img full-width-img" src="img/img-good/5757e77dn5ba4877c_002.jpg" alt="" /></li>
+								<li><img class="full-heigh-img full-width-img" src="img/img-good/5757e77dn5ba4877c_002.jpg" alt="" /></li>
+								<li><img class="full-heigh-img full-width-img" src="img/img-good/5757e77dn5ba4877c_002.jpg" alt="" /></li>
+								<li><img class="full-heigh-img full-width-img" src="img/img-good/57551857n566d9f74.jpg" alt="" /></li>
+								<li><img class="full-heigh-img full-width-img" src="img/img-good/57551857n566d9f74.jpg" alt="" /></li>
+								<li><img class="full-heigh-img full-width-img" src="img/img-good/57551857n566d9f74.jpg" alt="" /></li>
+							</ul>
+
+						</div>
+
+						<i class="toRight"></i>
+					</div>
+					<img style="height: 40px; margin-top: 20px;" src="img/img-iocn/屏幕快照 2017-07-02 上午12.13.51.png" />
+				</div>
+				<div class="good-show-info">
+					<div class="info-title">康佳（KONKA）遥控电风扇/落地扇/五扇叶遥控落地扇KF-40LY01 </div>
+					<div class="info-title-sm">119元KF-40LY01遥控落地扇抄底秒杀！7月1日早10点准时开抢！远程遥控、9种风感、7.5小时定时、手快有、手慢无！
+						<a href="">风扇低至69元，详情猛戳这里</a>
+					</div>
+					<div class="miaosha-box">
+						<div class="miaosha-box-banner">
+							<i class="icon-clock"></i>
+							<strong style="color: white; font-family: 'agency fb';">京东秒杀</strong>
+							<span class="miaosha-right">距离结束:<span class="text-clock">23</span>:<span class="text-clock">12</span>:<span class="text-clock">59</span></span>
+
+						</div>
+						<div class="price-info">
+							<p>
+								秒 杀 价 <span class="current-price">￥119.00</span><sub>[￥258] </sub>
+								<a href="">降价通知</a><span class="current-talk">累计评价<br /><strong style="font: 14px verdana;color: rgb(0, 94, 167);line-height: 20px;">9.6万+</strong> </span>
+							</p>
+							<p>促　 销
+								<a href="" class="span-border">限购</a> 购买1-9件时享受优惠，超出数量以结算价为准</p>
+							<p style="margin-top: 5px;">
+								<a href="" class="span-border" style="margin-left: 53px;">限购</a> 此价格不与套装优惠同时享受</p>
+						</div>
+						<div class="summery">
+							<div class="summery01">
+								<span class="summery-text-left">
+								配 送 至
+							</span>
+								<span class="summery-text-right">
+							上海徐汇区城区有货<br />
+							支持&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">99元免基础运费(20kg内)</a>&nbsp;|&nbsp;<a href="">货到付款</a>&nbsp;|&nbsp;<a href="">京准达</a>&nbsp;|&nbsp;<a href="">夜间配</a>
+							</span>
+							</div>
+							<div class="summery02">
+								<span class="summery-text-left"></span>
+								<span class="summery-text-right">由 <span class="color-red">京东</span> 发货，<span class="color-red">康佳两季品旗舰店</span> 提供售后服务。11:10前下单,预计今天(07月01日)送达</span>
+							</div>
+							<div class="summery03">
+								<span class="summery-text-left">重　 	量</span>
+								<span class="summery-text-right">6.7kg</span>
+							</div>
+						</div>
+
+					</div>
+					<div class="device-hr-lg"></div>
+					<div class="selected">
+						<span class="summery-text-left">选择颜色</span>
+						<div class="summery-text-right">
+							<div class="item-img-text"> <img class="full-heigh-img" src="img/img-good/5755184dnd52fd983.jpg" alt="" /> <span>【智能遥控】</span> </div>
+							<div class="item-img-text"> <img class="full-heigh-img" src="img/img-good/577f2415nb86d6b12.jpg" alt="" /><span>【经典机械】</span></div>
+							<div class="item-img-text"> <img class="full-heigh-img" src="img/img-good/575d1220n0294fb23.jpg" alt="" /><span>【数码数控】</span></div>
+						</div>
+					</div>
+					<div class="selected">
+						<span class="summery-text-left">套&#12288;&#12288;装</span>
+						<div class="summery-text-right">
+							<div class="item-border">超值套餐1</div>
+						</div>
+					</div>
+					<div class="selected">
+						<span class="summery-text-left">增值保障</span>
+						<div class="summery-text-right">
+							<div class="item-img">
+								<a href=""><img src="img/img-iocn/屏幕快照 2017-01-01 上午10.37.42.png" alt="" /></a>
+							</div>
+							<div class="item-img">
+								<a href=""><img src="img/img-iocn/屏幕快照 2017-01-01 上午10.38.05.png" alt="" /></a>
+							</div>
+							<div class="item-img">
+								<a href=""><img src="img/img-iocn/屏幕快照 2017-01-01 上午10.38.16.png" alt="" /></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="selected">
+						<span class="summery-text-left">白条分期</span>
+						<div class="summery-text-right">
+							<div class="item-border">
+								<a href="">不分期</a>
+							</div>
+							<div class="item-border">
+								<a href="">￥40.26x3</a>
+							</div>
+							<div class="item-border">
+								<a href="">￥30.56x4</a>
+							</div>
+							<div class="item-border">
+								<a href="">￥20.56x5</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="device-hr-lg"></div>
+					<div class="btn-box">
+						<div class="btn-box-first">
+							<input type="text" value="1" />
+							<div class="input-button">
+								<div class="input-button1">+</div>
+								<div class="input-button2">-</div>
+							</div>
+						</div>
+						<button class="btn-submit">加入购物车</button>
+					</div>
+					<div class="tips">
+						<span> 本地活动 · <a href="">企业采购 >></a> </span><br />
+						<span>温馨提示 ·支持7天无理由退货</span>
+					</div>
+				</div>
+				<div class="good-show-else">
+					<img style="width: 180px;" src="img/img-good/55640712naeea4e8c.jpg" />
+					<div class="dianzhangtuijian"><span class="device-hr"></span><span>店长推荐</span><span class="device-hr"></span></div>
+					<div class="else-good">
+						<img src="img/img-good/570cdf79n957de037.jpg" />
+						<span><a href="">￥118</a></span>
+					</div>
+					<div class="else-good">
+						<img src="img/img-good/5757e77dn5ba4877c.jpg" />
+						<span><a href="">￥128</a></span>
+					</div>
+					<div class="else-more">
+						<div>
+							<a href=""></a>
+						</div>
+						<div style="background-position: 0px 0px;">
+							<a href=""></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="lastPart">
+				<div class="lastPart-left">
+					<div class="lastPart-left-box">
+
+						<div class="lastPart-left-box-head">
+							<h3>康佳两季品旗舰店</h3>
+						</div>
+						<div class="lastPart-left-box-body flex-between">
+							<div class="lastPart-left-box-btn">
+								<i class="house"></i>进店逛逛
+							</div>
+							<div class="lastPart-left-box-btn">
+								<i class="focus"></i>关注店铺
+							</div>
+						</div>
+
+					</div>
+					<div class="lastPart-left-box" style="margin-top: 20px;">
+
+						<div class="lastPart-left-box-head">
+							<h3>店内搜索</h3>
+						</div>
+						<div class="lastPart-left-box-body">
+							<div class="input-grop">
+								<span>关键字</span><input type="text" name="" id="" value="" />
+							</div>
+							<div class="input-grop">
+								<span>价格：</span><input style="width: 50px;" type="text" name="" id="" value="" /><span>到</span><input style="width: 50px;" type="text" name="" id="" value="" />
+							</div>
+						</div>
+					</div>
+					<div class="lastPart-left-box" style="margin-top: 20px; ">
+						<div style="padding: 0; border-bottom:1px solid rgb(228, 57, 60) ;" class="lastPart-left-box-head flex-between else-solded">
+							<div>
+								店铺热销
+							</div>
+							<div>
+								热门关注
+							</div>
+						</div>
+						<div class="lastPart-left-img-box">
+							<img class="" src="img/img-good/57551c2fnb1f3dafa.jpg" />
+							<p class="left-img-box-price"><span class="num">1</span>热销94406件 <span>￥139.00</span></p>
+						</div>
+						<div class="lastPart-left-img-box">
+							<img class="" src="img/img-good/577f2415nb86d6b12_001.jpg" />
+							<p class="left-img-box-price"><span class="num">2</span>热销8406件 <span>￥139.00</span></p>
+						</div>
+						<div class="lastPart-left-img-box">
+							<img class="" src="img/img-good/5757e77dn5ba4877c_005.jpg" />
+							<p class="left-img-box-price"><span class="num">3</span>热销6606件 <span>￥139.00</span></p>
+						</div>
+						<div class="lastPart-left-img-box">
+							<img class="" src="img/img-good/5732f5c0n93d9df80.jpg" />
+							<p class="left-img-box-price"><span class="num">4</span>热销5406件 <span>￥139.00</span></p>
+						</div>
+						<div class="lastPart-left-img-box">
+							<img class="" src="img/img-good/570cdf79n957de037.jpg" />
+							<p class="left-img-box-price"><span class="num">5</span>热销3306件 <span>￥139.00</span></p>
+						</div>
+					</div>
+					<img class="full-width-img" style="margin-top: 50px;" src="img/img-good/59535841n70d625c0.jpg" />
+				</div>
+				<div class="lastPart-right">
+					<div class="lastPart-right-nav">
+						<ul class="lastPart-right-nav-left">
+							<li>
+								<a style="color:white" href="">商品介绍</a>
+							</li>
+							<li>
+								<a href="">规格包装</a>
+							</li>
+							<li>
+								<a href="">售后保障</a>
+							</li>
+							<li>
+								<a href="">商品评价(9.6万+)</a>
+							</li>
+						</ul>
+						<div class="lastPart-right-nav-right">
+							<img style="width: 14px; vertical-align: middle;" src="img/img-iocn/sprite-gys-im.gif" />
+							<a href="">联系供应商</a>
+							<span class="btn-add"><a href="" style="color: white;">加入购物车</a></span>
+						</div>
+					</div>
+					<div class="good-introduce">
+						<span class="good-introduce-title">
+								<a href="">品牌： 康佳（KONKA）</a>
+							</span>
+						<div class="introduce-info">
+							<span><a href="">  商品编号：1093073</a></span>
+							<span><a href="">  商品毛重：6.2kg</a></span>
+							<span><a href="">  商品产地：中国大陆</a></span>
+							<span><a href="">  定时范围：2-8小时</a></span>
+							<span><a href="">  档位：三档调节</a></span>
+							<span><a href="">  风类模式：正常风、自然风、睡眠风</a></span>
+							<span><a href=""> 扇叶片数：5片</a></span>
+							<span><a href="">  能效等级：2级</a></span>
+							<span><a href="">   控制方式：遥控式</a></span>
+							<span><a href="">  类别：落地扇</a></span>
+						</div>
+					</div>
+					<div class="good-introduce-img-box">
+						<img class="full-width-img" src="img/img-good/594cc516nb185702f.jpg" />
+						<img class="full-width-img" src="img/img-good/594cc518n6284c4e4.gif" />
+						<img class="full-width-img" src="img/img-good/59560455n9ed08e54.gif" />
+						<img class="full-width-img" src="img/img-good/58c8fe9fn968f1778.jpg" />
+						<img class="full-width-img" src="img/img-good/58c8fea4n3adc6e84.jpg" />
+						<img class="full-width-img" src="img/img-good/58cc9b5enfe19ce33.jpg" />
+						<img class="full-width-img" src="img/img-good/58c8feafn3e1a7b7c.jpg" />
+						<img class="full-width-img" src="img/img-good/58c8feb3n26bb6a76.jpg" />
+						<img class="full-width-img" src="img/img-good/58c8fec2ne192b8ba.gif" />
+						<img class="full-width-img" src="img/img-good/58c8fec6nf6965977.jpg" />
+						<img class="full-width-img" src="img/img-good/58c8fecdn45f83a41.jpg" />
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/top-head.js"></script>
+	<script type="text/javascript" src="js/big-img.js">
+	</script>
+
+</html>

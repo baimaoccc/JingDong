@@ -1,0 +1,2675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>家电馆-电视_空调_冰洗_厨卫电器_厨房电器_生活电器_个护电器</title>
+	<link rel="stylesheet" href="css/sprite.css">
+	<link rel="stylesheet/less" href="css/home_appliance.less">
+	<link rel="stylesheet" href="css/miaosha.css">
+</head>
+<body>
+<main>
+	<header>
+		<nav>
+			<div id="shurtNav">
+				<ul id="shurtNavLeft">
+					<li><i class="iconfont"></i>
+						<a href="/main">京东首页</a>
+					</li>
+					<li class="select-li" id="selectProvice"><i class="iconfont"></i>
+						<a href="#">上海</a>
+						<div id="showProvice" class="down-div nav-downbox-shadow">
+							<div>
+								<div class="ui-areamini-content-list">
+									<div class="item">
+										<a data-id="1" href="javascript:void(0)" class="selected">北京</a>
+									</div>
+									<div class="item">
+										<a data-id="2" href="javascript:void(0)">上海</a>
+									</div>
+									<div class="item">
+										<a data-id="3" href="javascript:void(0)">天津</a>
+									</div>
+									<div class="item">
+										<a data-id="4" href="javascript:void(0)">重庆</a>
+									</div>
+									<div class="item">
+										<a data-id="5" href="javascript:void(0)">河北</a>
+									</div>
+									<div class="item">
+										<a data-id="6" href="javascript:void(0)">山西</a>
+									</div>
+									<div class="item">
+										<a data-id="7" href="javascript:void(0)">河南</a>
+									</div>
+									<div class="item">
+										<a data-id="8" href="javascript:void(0)">辽宁</a>
+									</div>
+									<div class="item">
+										<a data-id="9" href="javascript:void(0)">吉林</a>
+									</div>
+									<div class="item">
+										<a data-id="10" href="javascript:void(0)">黑龙江</a>
+									</div>
+									<div class="item">
+										<a data-id="11" href="javascript:void(0)">内蒙古</a>
+									</div>
+									<div class="item">
+										<a data-id="12" href="javascript:void(0)">江苏</a>
+									</div>
+									<div class="item">
+										<a data-id="13" href="javascript:void(0)">山东</a>
+									</div>
+									<div class="item">
+										<a data-id="14" href="javascript:void(0)">安徽</a>
+									</div>
+									<div class="item">
+										<a data-id="15" href="javascript:void(0)">浙江</a>
+									</div>
+									<div class="item">
+										<a data-id="16" href="javascript:void(0)">福建</a>
+									</div>
+									<div class="item">
+										<a data-id="17" href="javascript:void(0)">湖北</a>
+									</div>
+									<div class="item">
+										<a data-id="18" href="javascript:void(0)">湖南</a>
+									</div>
+									<div class="item">
+										<a data-id="19" href="javascript:void(0)">广东</a>
+									</div>
+									<div class="item">
+										<a data-id="20" href="javascript:void(0)">广西</a>
+									</div>
+									<div class="item">
+										<a data-id="21" href="javascript:void(0)">江西</a>
+									</div>
+									<div class="item">
+										<a data-id="22" href="javascript:void(0)">四川</a>
+									</div>
+									<div class="item">
+										<a data-id="23" href="javascript:void(0)">海南</a>
+									</div>
+									<div class="item">
+										<a data-id="24" href="javascript:void(0)">贵州</a>
+									</div>
+									<div class="item">
+										<a data-id="25" href="javascript:void(0)">云南</a>
+									</div>
+									<div class="item">
+										<a data-id="26" href="javascript:void(0)">西藏</a>
+									</div>
+									<div class="item">
+										<a data-id="27" href="javascript:void(0)">陕西</a>
+									</div>
+									<div class="item">
+										<a data-id="28" href="javascript:void(0)">甘肃</a>
+									</div>
+									<div class="item">
+										<a data-id="29" href="javascript:void(0)">青海</a>
+									</div>
+									<div class="item">
+										<a data-id="30" href="javascript:void(0)">宁夏</a>
+									</div>
+									<div class="item">
+										<a data-id="31" href="javascript:void(0)">新疆</a>
+									</div>
+									<div class="item">
+										<a data-id="52993" href="javascript:void(0)">港澳</a>
+									</div>
+									<div class="item">
+										<a data-id="32" href="javascript:void(0)">台湾</a>
+									</div>
+									<div class="item">
+										<a data-id="84" href="javascript:void(0)">钓鱼岛</a>
+									</div>
+									<div class="item">
+										<a data-id="53283" href="javascript:void(0)">海外</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id="shurtNavRight">
+					<li>
+						{{if user}}
+						<a href="#" class="strong1" style="color: red;">{{user.name}}</a>
+						{{else}}
+						<a href="/tologin">你好，请登录</a>&nbsp;&nbsp;
+						<a href="/toregister">免费注册</a>
+						{{/if}}
+						
+					</li>
+					<li class="spacer"></li>
+					<li class="fore2">
+						<div>
+							<a target="_top" href="">我的订单</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="select-li">
+						<div id='myNavJD'>
+							<a target="_top" href="">我的京东</a><i class="iconfont"></i>
+						</div>
+						<div id="myJDitems" class="down-div nav-downbox-shadow">
+							<div class="my-item">
+								<div>
+									<a href="">待处理</a>
+								</div>
+								<div>
+									<a href="">消息</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">返修退订货</a>
+								</div>
+								<div>
+									<a href="">我的回答</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">降价商品</a>
+								</div>
+								<div>
+									<a href="">我的关注</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">我的京豆</a>
+								</div>
+								<div>
+									<a href="">我的优惠券</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">我的白条</a>
+								</div>
+								<div>
+									<a href="">我的理财</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li>
+						<div class="div">
+							<a target="_top" href="">京东会员</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore5">
+						<div>
+							<a target="_top" href="">企业采购</a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="select-li">
+						<div id="myCostomServer">
+							<a href="#">客户服务<i class="iconfont"></i></a>
+						</div>
+						<div id="myCustomItems" class="down-div nav-downbox-shadow">
+							<div style="color: #666;text-align: left;margin-left: 14px">
+								客户
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">帮助中心</a>
+								</div>
+								<div>
+									<a href="">售后服务</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">在线客服</a>
+								</div>
+								<div>
+									<a href="">意见建议</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">电话客服</a>
+								</div>
+								<div>
+									<a href="">客服邮箱</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">金融咨询</a>
+								</div>
+								<div>
+									<a href="">销全球售</a>
+								</div>
+							</div>
+							<div class="divice-hr"></div>
+							<div style="color: #666;text-align: left;margin-left: 14px">
+								商户
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">销全球售</a>
+								</div>
+								<div>
+									<a href="">京东商学院</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">商家后台</a>
+								</div>
+								<div>
+									<a href="">京麦工作台</a>
+								</div>
+							</div>
+							<div class="my-item">
+								<div>
+									<a href="">商家帮助</a>
+								</div>
+								<div>
+									<a href="">规则平台</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="select-li">
+						<div id="myNetNav">
+							<a href="#">网站导航<i class="iconfont"></i></a>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li>
+						<div>
+							<a href="#">手机京东</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="myNetItems">
+			<div class="net-fore1 float-left">
+				<div>特色主题</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a target="_top">发现好货</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东预售</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东金融</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东试用</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">全球售</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">优惠券</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">闪购</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">京东会员</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">秒杀</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">定期送</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">装机大师</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">新奇特</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">企业金融服务</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">礼品购</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">智能馆</a>
+					</div>
+					<div class="fore-item">
+						<a target="_top">0元评测</a>
+					</div>
+					<div class="fore-item">
+						<a href="https://jr.jd.com/buy/index" target="_top">In货推荐</a>
+					</div>
+					<div class="fore-item">
+						<a href="https://sale.jd.com/act/3je8ZTCxNl6SusId.html" target="_top">北京老字号</a>
+					</div>
+					<div class="fore-item">
+						<a href="https://what.jd.com/" target="_top">买什么</a>
+					</div>
+				</div>
+			</div>
+			<div class="net-fore2 float-left">
+				<div>行业频道</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a href="" target="_top">服装城</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">家用电器</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">电脑办公</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">手机</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">美妆馆</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">食品</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">智能数码</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">母婴</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">家装城</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">运动户外</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">整车</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">图书</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">农资频道</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东智能</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">玩3C</a>
+					</div>
+				</div>
+			</div>
+			<div class="net-fore3 float-left">
+				<div>生活服务</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a href="" target="_top">京东众筹</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">白条</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东金融App</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东小金库</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">理财</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">话费</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">旅行</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">彩票</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">游戏</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">机票酒店</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">电影票</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">水电煤</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东到家</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东微联</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东众测</a>
+					</div>
+				</div>
+			</div>
+			<div class="net-fore4 float-left">
+				<div>更多精选</div>
+				<div class="my-net-items">
+					<div class="fore-item">
+						<a href="" target="_top">京东社区</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东通信</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">在线读书</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京东E卡</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">智能社区</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">游戏社区</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">京友邦</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">合作招商</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">企业采购</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">服务市场</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">乡村招募</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">校园加盟</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">办公生活馆</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">知识产权维权</a>
+					</div>
+					<div class="fore-item">
+						<a href="" target="_top">English Site</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="advertisingBox">
+		<a><img id="advertisingPic" src="img/adverPic.jpg"></a>
+		<div id="closeBtn"></div>
+	</div>
+	<section id="titleNav">
+		<section id="top">
+			<div id="logo"></div>
+			<span id="title">家用电器</span>
+			<div id="sort"><a>全部分类<span>&or;</span></a>
+				<div id="sortDetail">
+					<ul>
+						<li><a>家用电器</a></li>
+						<li><a>手机</a>、<a>运营商</a>、<a>数码</a></li>
+						<li><a>电脑</a>、<a>办公</a></li>
+						<li><a href="">家居</a>、<a href="">家具</a>、<a href="">家装</a>、<a href="">厨具</a></li>
+						<li><a href="">男装</a>、<a href="">女装</a>、<a href="">童装</a>、<a href="">内衣</a></li>
+						<li><a href="">美妆个护</a>、<a href="">宠物</a></li>
+						<li><a href="">女鞋</a>、<a href="">箱包</a>、<a href="">钟表</a>、<a href="">珠宝</a></li>
+						<li><a href="">男鞋</a>、<a href="">运动</a>、<a href="">户外</a></li>
+						<li><a href="">汽车</a>、<a href="">汽车用品</a></li>
+						<li><a href="">母婴</a>、<a href="">玩具乐器</a></li>
+						<li><a href="">食品</a>、<a href="">酒类</a>、<a href="">生鲜</a>、<a href="">特产</a></li>
+						<li><a href="">礼品鲜花</a>、<a href="">农资绿植</a></li>
+						<li><a href="">医药保障</a>、<a href="">计生情趣</a></li>
+						<li><a href="">图书</a>、<a href="">音像</a>、<a href="">户电子书外</a></li>
+						<li><a href="">机票</a>、<a href="">酒店</a>、<a href="">旅游</a>、<a href="">生活</a></li>
+						<li><a href="">理财</a>、<a href="">众筹</a>、<a href="">白条</a>、<a href="">保险</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="search">
+				<input type="text" value="厨卫大电"><span id="behind">搜索</span>
+				<div>
+					<a href="#">神价再现</a>
+					<a href="#">志高</a>
+					<a href="#">裸价出击</a>
+					<a href="#">人工智能</a>
+					<a href="#">每满千减百</a>
+					<a href="#">空调999元</a>
+					<a href="#">节能补贴</a>
+				</div>
+			</div>
+			<div id="shopcart">
+				我的购物车
+				<i></i>
+			</div>
+			<div id="scanCodeBox">
+				<i></i>
+				扫码享受优惠
+			</div>
+			<div id="scanCodeDetail"></div>
+		</section>
+		<section id="below">
+			<span>京东家电首页</span>
+			<a href="#">家电资讯</a>
+			<a href="#">智能家居</a>
+			<a href="#">乡镇专卖店</a>
+			<a href="#">企业购</a>
+			<a href="#">众筹新科技</a>
+			<a href="#">3C</a>
+		</section>
+	</section>
+	<div id="shufflingBox">
+		<div id="leftNav">
+			<ul>
+				<li>
+					<div class="topLi">
+						<div class="img sprite kongtiao1"></div>
+						<span>空调</span>
+						<span class="arrowRight sprite"></span>
+					</div>
+					<div class="belowLi">
+						<span>0元安装</span>
+						<span>节能空调</span>
+					</div>
+					<div class="leftDetail">
+						<div class="leftText">
+							<dl>
+								<dd><h4>挂式空调</h4>
+									<span>1匹</span>
+									<span>1.5匹</span>
+									<span>2匹</span>
+									<span>3匹</span>
+									<span>0元安装</span><br>
+									<span>变频挂机</span>
+									<span>高能效挂机</span>
+									<span>智能挂机</span><br>
+									<span>除甲醛挂机</span></dd>
+								<dd>
+									<h4>柜式空调</h4>
+									<span>2匹</span>
+									<span>3匹</span>
+									<span>5匹及以上</span>
+									<span>0元安装</span><br>
+									<span>圆柱式柜机</span>
+									<span>高能效柜机</span>
+									<span>变频柜机</span><br>
+									<span>合资品</span>
+									<span>除甲醛柜机</span>
+									<span>智能柜机</span></dd>
+								<dd>
+									<h4>中央空调</h4>
+									<span>多联机</span>
+									<span>风管机</span>
+									<span>天花机</span>
+									<span>商用柜机</span><br>
+									<span>新风系统</span></dd>
+							</dl>
+						</div>
+						<div class="leftPic">
+							<img src="img/pic11.jpg">
+							<img src="img/pic12.jpg">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="topLi">
+						<div class="img sprite xiyiji1"></div>
+						<span>冰箱洗衣机</span>
+						<span class="arrowRight sprite"></span>
+					</div>
+					<div class="belowLi">
+						<span>对开门冰箱</span>
+						<span>洗烘一体机</span>
+					</div>
+					<div class="leftDetail">
+						<div class="leftText">
+							<dl>
+								<dd><h4>冰箱</h4>
+									<span>对开门冰箱</span>
+									<span>十字对开门冰箱</span>
+									<span>多门冰箱</span><br>
+									<span>三门冰箱</span>
+									<span>双门冰箱</span>
+									<span>单门冰箱</span><br>
+									<span>冷柜/冰吧</span>
+									<span>酒柜</span><br></dd>
+								<dd>
+									<h4>柜式空调</h4>
+									<span>2匹</span>
+									<span>3匹</span>
+									<span>5匹及以上</span>
+									<span>0元安装</span><br>
+									<span>圆柱式柜机</span>
+									<span>高能效柜机</span>
+									<span>变频柜机</span><br>
+									<span>合资品</span>
+									<span>除甲醛柜机</span>
+									<span>智能柜机</span></dd>
+							</dl>
+						</div>
+						<div class="leftPic">
+							<img src="img/pic21.jpg">
+							<img src="img/pic22.jpg">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="topLi">
+						<div class="img sprite dianshi1"></div>
+						<span>电视</span>
+						<span class="arrowRight sprite"></span>
+					</div>
+					<div class="belowLi">
+						<span>平板电脑</span>
+						<span>家庭影音</span>
+					</div>
+					<div class="leftDetail">
+						<div class="leftText">
+							<dl>
+								<dd><h4>平板电视</h4>
+									<span>曲面电视</span>
+									<span>超薄电视</span>
+									<span>4k超清电视</span>
+									<span>HDR</span><br>
+									<span>OLED电视</span>
+									<span>量子点电视</span>
+									<span>商用电视</span><br>
+									<span>智能电视</span>
+									<span>互联网电视</span>
+									<span>普通电视</span><br>
+									<span>视频合约机</span>
+								</dd>
+								<dd>
+									<h4>家庭影音</h4>
+									<span>迷你音响</span>
+									<span>家庭影院</span>
+									<span>DVD</span>
+									<span>回音壁影院</span><br>
+									<span>功放</span>
+									<span>商业电视</span>
+									<span>CD&磁带机</span><br>
+									<span>合资品</span>
+									<span>除甲醛柜机</span>
+									<span>智能柜机</span></dd>
+								<dd>
+									<h4>家电配件</h4>
+									<span>影音转接头配件</span>
+									<span>电视机配件</span><br>
+									<span>洗衣机配件</span>
+									<span>冰箱配件</span>
+									<span>音频线</span><br>
+									<span>HDMI转接</span>
+									<span>type-c转接</span>
+									<span>小家电配件</span><br>
+									<span>VR/AR智能设备</span>
+									<span>健身娱乐周边配件</span></dd>
+							</dl>
+						</div>
+						<div class="leftPic">
+							<img src="img/pic31.jpg">
+							<img src="img/pic32.jpg">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="topLi">
+						<div class="img sprite chuwei1"></div>
+						<span>厨卫电器</span>
+						<span class="arrowRight sprite"></span>
+					</div>
+					<div class="belowLi">
+						<span>厨卫大电</span>
+						<span>净水器</span>
+					</div>
+					<div class="leftDetail">
+						<div class="leftText">
+							<dl>
+								<dd><h4>厨卫大电</h4>
+									<span>烟灶套装</span>
+									<span>油烟机</span>
+									<span>燃气灶</span>
+									<span>洗碗机</span><br>
+									<span>嵌入式厨电</span>
+									<span>消毒柜</span>
+									<span>集成灶</span><br>
+									<span>商用厨房设备</span>
+								</dd>
+								<dd>
+									<h4>热水器</h4>
+									<span>燃气热水器</span>
+									<span>电热水器</span>
+									<span>厨宝</span><br>
+									<span>电热水龙头</span>
+									<span>太阳能热水器</span><br>
+									<span>空气能热水器</span>
+									<span>壁挂炉</span></dd>
+								<dd>
+									<h4>净水饮水</h4>
+									<span>净水器</span>
+									<span>饮水机</span>
+									<span>纯水机</span>
+									<span>超滤机</span><br>
+									<span>滤水壶</span>
+									<span>中央净水机</span>
+									<span>龙头净水器</span></dd>
+							</dl>
+						</div>
+						<div class="leftPic">
+							<img src="img/pic41.png">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="topLi">
+						<div class="img sprite xiaodian1"></div>
+						<span>厨房小电</span>
+						<span class="arrowRight sprite"></span>
+					</div>
+					<div class="belowLi">
+						<span>破壁机</span>
+						<span>多用途锅</span>
+					</div>
+					<div class="leftDetail">
+						<div class="leftText">
+							<dl>
+								<dd><h4>西式厨电</h4>
+									<span>榨汁机</span>
+									<span>原汁机</span>
+									<span>破壁机</span>
+									<span>咖啡机</span><br>
+									<span>电烤箱</span>
+									<span>面包机</span>
+									<span>电烧烤炉</span>
+									<span>空气炸锅</span><br>
+									<span>打蛋器</span>
+									<span>厨师机</span>
+								</dd>
+								<dd>
+									<h4>创意厨电</h4>
+									<span>养生壶</span>
+									<span>料理机</span>
+									<span>电炖锅</span>
+									<span>多用途锅</span><br>
+									<span>煮蛋器</span>
+									<span>酸奶机</span>
+									<span>电热饭盒</span>
+									<span>面条机</span><br>
+									<span>果蔬解毒机</span>
+									<span>其他厨房电器</span></dd>
+								<dd>
+									<h4>中式厨电</h4>
+									<span>电饭煲</span>
+									<span>电压力锅</span>
+									<span>豆浆机</span>
+									<span>微波炉</span><br>
+									<span>电磁炉</span>
+									<span>电水壶</span>
+									<span>电饼铛</span>
+									<span>电陶炉</span></dd>
+							</dl>
+						</div>
+						<div class="leftPic">
+							<img src="img/pic51.jpg">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="topLi">
+						<div class="img sprite shdq1"></div>
+						<span>生活电器</span>
+						<span class="arrowRight sprite"></span>
+					</div>
+					<div class="belowLi">
+						<span>电风扇</span>
+						<span>吸尘器</span>
+					</div>
+					<div class="leftDetail">
+						<div class="leftText">
+							<dl>
+								<dd><h4>净化吸尘</h4>
+									<span>净水器</span>
+									<span>新风系统</span>
+									<span>卧式吸尘器</span><br>
+									<span>手持吸尘器</span>
+									<span>清洁机</span>
+									<span>除螨仪</span><br>
+									<span>扫地机器人</span>
+								</dd>
+								<dd>
+									<h4>风扇清凉</h4>
+									<span>电风扇</span>
+									<span>冷风扇</span>
+									<span>取暖器</span>
+									<span>小太阳</span><br>
+									<span>其他生活电器</span></dd>
+								<dd>
+									<h4>潮流生活小家电</h4>
+									<span>加湿器</span>
+									<span>除湿机</span>
+									<span>干衣机</span>
+									<span>挂烫机</span><br>
+									<span>电话机</span></dd>
+							</dl>
+						</div>
+						<div class="leftPic">
+							<img src="img/pic61.jpg">
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="topLi">
+						<div class="img sprite ghdq1"></div>
+						<span>个体电器</span>
+						<span class="arrowRight sprite"></span>
+					</div>
+					<div class="belowLi">
+						<span>剃须刀</span>
+						<span>美容器</span>
+					</div>
+					<div class="leftDetail">
+						<div class="leftText">
+							<dl>
+								<dd><h4>个人护理</h4>
+									<span>剃须刀</span>
+									<span>剃/脱毛器</span>
+									<span>口腔护理</span><br>
+								</dd>
+								<dd>
+									<h4>美容美发</h4>
+									<span>电吹风</span>
+									<span>美容器</span>
+									<span>卷/直发器</span>
+									<span>理发器</span><br></dd>
+								<dd>
+									<h4>健康保健</h4>
+									<span>足浴盆</span>
+									<span>健康秤/厨房秤</span>
+									<span>按摩器</span><br>
+									<span>按摩椅</span>
+									<span>其他健康电器</span>
+								</dd>
+							</dl>
+						</div>
+						<div class="leftPic">
+							<img src="img/pic71.jpg">
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="shufflingImgBox">
+			<img src="img/lunbo1.jpg">
+			<div class="leftArrow"><</div>
+			<div class="rightArrow">></div>
+			<section>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</section>
+		</div>
+		<div id="rightNav">
+			<table>
+				<thead>
+				<tr>
+					<td colspan="3" style="text-align: center">-京东家电服务-</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						<div style="background-image: url('img/jiagebaohu.png')"></div>
+						<p>价格保护</p>
+						<div class="serverDetail"><p>收货30天</p>
+							<p>内可申请</p></div>
+					</td>
+
+					<td>
+						<div class="tui sprite"></div>
+						<p>30天可退</p>
+						<div class="serverDetail"><p>商品完好</p>
+							<p>质量问题</p></div>
+					</td>
+					<td>
+						<div style="background-image: url('img/huan.png')"></div>
+						<p>180天可换货</p>
+						<div class="serverDetail"><p>质量问题</p>
+							<p>可换货</p></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="wuliyou sprite"></div>
+						<p>7天无理由</p>
+						<div class="serverDetail"><p>商品完好</p>
+							<p>附件齐全</p></div>
+					</td>
+					<td>
+						<div class="jiuhuanxin sprite"></div>
+						<p>以旧换新</p>
+						<div class="serverDetail"><p>家电回收</p>
+							<p>T+1天内上</p></div>
+					</td>
+					<td>
+						<div class="baoyang sprite"></div>
+						<p>清新保养</p>
+						<div class="serverDetail"><p>要怎么洗</p>
+							<p>你看着选</p></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="jieneng sprite"></div>
+						<p>节能补贴</p>
+						<div class="serverDetail"><p>政府补贴</p>
+							<p>最高800元</p></div>
+					</td>
+					<td>
+						<div class="anzhuang sprite"></div>
+						<p>安装维护</p>
+						<div class="serverDetail"><p>想怎么装</p>
+							<p>你说了算</p></div>
+					</td>
+					<td>
+						<div class="qiye sprite"></div>
+						<p>企业购</p>
+						<div class="serverDetail"><p>企业专享</p>
+							<p>一价全包</p></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div style="background-image: url('img/bangzhu.png')"></div>
+						<p>京东帮</p>
+						<div class="serverDetail"><p>免费送</p>
+							<p>及时装</p></div>
+					</td>
+					<td>
+						<div style="background-image: url('img/zhaoshang.png')"></div>
+						<p>专卖店招商</p>
+						<div class="serverDetail"><p>一镇一店</p>
+							<p>轻资产</p></div>
+					</td>
+					<td>
+						<div class="more sprite"></div>
+						<p>更多</p>
+						<div class="serverDetail"></div>
+					</td>
+				</tr>
+				</tbody>
+				<tfoot>
+				<tr>
+					<td colspan="3">
+						<div class="sprite kefuzixun"></div>
+						家电客服咨询
+					</td>
+				</tr>
+				</tfoot>
+
+			</table>
+		</div>
+	</div>
+	<section id="selection">
+		<div id="manDiv" class="detailDiv">
+			<section class="inner">
+				<p>- 精选 -</p>
+				<em>惠品牌</em>
+				<a href="">查看更多活动></a>
+			</section>
+		</div>
+		<div class="detailDiv left">
+			<a href="" class="neibu">
+				<div class="name">全名来砍价</div>
+				<div class="promoteText">最高砍价1000元</div>
+				<div class="pic" style="background-image: url('img/midPic2.png')"></div>
+			</a>
+		</div>
+		<div class="detailDiv left">
+			<a href="" class="neibu">
+				<div class="name">白条专场</div>
+				<div class="promoteText">6期免息</div>
+				<div class="pic" style="background-image: url('img/midpic3.png')"></div>
+			</a>
+		</div>
+		<div class="detailDiv left">
+			<a href="" class="neibu">
+				<div class="name">月黑风高</div>
+				<div class="promoteText">每晚20点开始</div>
+				<div class="pic" style="background-image: url('img/midpic4.png')"></div>
+			</a>
+		</div>
+		<div class="detailDiv left">
+			<a href="" class="neibu">
+				<div class="name">优惠券</div>
+				<div class="promoteText">先领券后下单</div>
+				<div class="pic" style="background-image: url('img/midpic5.png')"></div>
+			</a>
+		</div>
+		<div class="detailDiv left">
+			<a href="" class="neibu">
+				<div class="name">进口电器</div>
+				<div class="promoteText">品质生活</div>
+				<div class="pic" style="background-image: url('img/midpic6.png')"></div>
+			</a>
+		</div>
+	</section>
+	<div class="segmentation">
+		<h3>热卖爆品</h3>
+	</div>
+	<div id="reMaiNav">
+		<ul>
+			<li><span style="background-image: url('img/remen.png')"></span>
+				<p>热门</p>
+
+			</li>
+			<li><span style="background-image: url('img/kongtiao1.png')"></span>
+				<p>空调</p>
+			</li>
+			<li><span style="background-image: url('img/bingxi.png')"></span>
+				<p>冰洗</p>
+			</li>
+			<li><span style="background-image: url('img/pingban.png')"></span>
+				<p>平板电视</p>
+			</li>
+			<li><span style="background-image: url('img/dadian.png')"></span>
+				<p>厨卫大电</p>
+			</li>
+			<li><span style="background-image: url('img/xiaodian.png')"></span>
+				<p>厨房小电</p>
+			</li>
+			<li><span style="background-image: url('img/shenghuo.png')"></span>
+				<p>生活电器</p>
+			</li>
+			<li><span style="background-image: url('img/gehu.png')"></span>
+				<p>个护健康</p>
+			</li>
+			<li><span style="background-image: url('img/rexiao.png');transform: scale(1.6);background-position:9px, 8px"></span>
+				<p>店铺热销</p>
+			</li>
+		</ul>
+		<section class="remaiDetail" style="display: block;">
+			<table>
+				<tr>
+					<td><img src="remaiImg/remen1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/remen2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/remen3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/remen4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/remen5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/remen6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+			<table>
+				<tr>
+					<td><img src="remaiImg/kongtiao1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/kongtiao2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/kongtiao3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/kongtiao4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/kongtiao5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/kongtiao6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+			<table>
+				<tr>
+					<td><img src="remaiImg/bingxi1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/bingxi2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/bingxi3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/bingxi4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/bingxi5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/bingxi6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+			<table>
+				<tr>
+					<td><img src="remaiImg/pingban1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/pingban2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/pingban3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/pingban4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/pingban5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/pingban6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+			<table>
+				<tr>
+					<td><img src="remaiImg/dadian1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/dadian2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/dadian3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/dadian4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/dadian5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/dadian6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+			<table>
+				<tr>
+					<td><img src="remaiImg/xiaodian1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/xiaodian2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/xiaodian3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/xiaodian4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/xiaodian5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/xiaodian6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+			<table>
+				<tr>
+					<td><img src="remaiImg/shenghuo1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/shenghuo2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/shenghuo3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/shenghuo4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/shenghuo5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/shenghuo6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+			<table>
+				<tr>
+					<td><img src="remaiImg/gehu1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+						<p>￥2799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/gehu2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+						<p>￥3799.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/gehu3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+						<p>￥2399.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/gehu4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+						<p>￥1688.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/gehu5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+						<p>￥2999.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+					<td><img src="remaiImg/gehu6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+						<p>￥2199.00</p>
+						<div class="goumai">立即购买</div>
+					</td>
+
+				</tr>
+			</table>
+		</section>
+		<section class="remaiDetail">
+		<table>
+			<tr>
+				<td><img src="remaiImg/dianpu1.jpg" alt=""><i>海尔（Haier）BCD-452WWDPF</i><i>452升 风冷无霜对开门</i>
+					<p>￥2799.00</p>
+					<div class="goumai">立即购买</div>
+				</td>
+				<td><img src="remaiImg/dianpu2.jpg" alt=""><i>海尔（Haier）</i><i>EG8014HB39GUI 8公斤变频</i>
+					<p>￥3799.00</p>
+					<div class="goumai">立即购买</div>
+				</td>
+				<td><img src="remaiImg/dianpu3.jpg" alt=""><i>TCL BCD——456KZ50 456升</i><i>冷藏自动除霜 电脑温控 十字对</i>
+					<p>￥2399.00</p>
+					<div class="goumai">立即购买</div>
+				</td>
+				<td><img src="remaiImg/dianpu4.jpg" alt=""><i>小天鹅（LittleSwan</i><i>TG80V2WDX 8公斤变频滚</i>
+					<p>￥1688.00</p>
+					<div class="goumai">立即购买</div>
+				</td>
+				<td><img src="remaiImg/dianpu5.jpg" alt=""><i>海尔（Haier）BCD-325WDSDW</i><i>325升 风冷无霜多门冰箱 304</i>
+					<p>￥2999.00</p>
+					<div class="goumai">立即购买</div>
+				</td>
+				<td><img src="remaiImg/dianpu6.jpg" alt=""><i>海尔（Haier）EG8012B39SU1</i><i>8公斤变频滚筒洗衣机 京东</i>
+					<p>￥2199.00</p>
+					<div class="goumai">立即购买</div>
+				</td>
+
+			</tr>
+		</table>
+	</section>
+	</div>
+	<div class="segmentation" style="margin-top: 300px">
+		<h3>搜索好物</h3>
+	</div>
+	<div id="haowu">
+		<div id="haowuLeft">
+			<table>
+				<tr>
+					<td style="background-image: url('haowuPic/haowu1.jpg')"></td>
+					<td style="background-image: url('haowuPic/haowu2.jpg')"></td>
+				</tr>
+				<tr>
+					<td style="background-image: url('haowuPic/haowu3.jpg')"></td>
+					<td style="background-image: url('haowuPic/haowu4.jpg')"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="haowuRight">
+			<table>
+				<tr>
+					<td style="background-image: url('pinpaiPic/pinpai11.png')">
+						<div><i>美的</i><i>原来生活可以更美</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai12.png')">
+						<div><i>海尔</i><i>我的智慧生活</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai13.png')">
+						<div><i>飞利浦</i><i>奔向男人新"净"界</i></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-image: url('pinpaiPic/pinpai21.png')">
+						<div><i>美菱</i><i>指定型号送冰温箱</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai22.png')">
+						<div><i>三洋</i><i>晒单送好礼</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai23.png')">
+						<div><i>松下</i><i>晒单送E卡</i></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-image: url('pinpaiPic/pinpai31.png')">
+						<div><i>三星</i><i>买大送小</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai32.png')">
+						<div><i>海信</i><i>爆品下单减700</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai33.jpg')">
+						<div><i>夏普</i><i>领券最高再减300</i></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-image: url('pinpaiPic/pinpai41.png')">
+						<div><i>格力</i><i>白条6期免息</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai42.png')">
+						<div><i>奥斯卡</i><i>领券下单减百元</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai43.jpg')">
+						<div><i>史密斯</i><i>爆品之降，晒单送礼</i></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-image: url('pinpaiPic/pinpai51.png')">
+						<div><i>老板</i><i>抢千元扫地机</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai52.png')">
+						<div><i>创维</i><i>签到送店铺优惠券</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai53.png')">
+						<div><i>小熊</i><i>满额晒单送礼</i></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-image: url('pinpaiPic/pinpai61.png')">
+						<div><i>贝尔斯顿</i><i>下单有礼</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai62.jpg')">
+						<div><i>Eraclean</i><i>给净化更多可能</i></div>
+					</td>
+					<td style="background-image: url('pinpaiPic/pinpai63.png')">
+						<div><i>博朗</i><i>德国品质，不止5折</i></div>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+	<div class="haowuSecond">
+		<a href="" style="background-image: url('pinpaiPic/hh1.jpg')"></a>
+		<a href="" style="background-image: url('pinpaiPic/hh2.jpg')"></a>
+		<a href="" style="background-image: url('pinpaiPic/hh3.jpg')"></a>
+	</div>
+	<section class="floor">1F 厨房小电</section>
+	<div class="floorBox">
+		<div class="leftPic">
+			<img src="1F/left.jpg" alt="">
+			<div>
+				<p>&#x3000;&#x3000;榨汁机&#x3000;&#x3000;&#x3000;料理机</p>
+				<p>&#x3000;&#x3000;咖啡机&#x3000;&#x3000;&#x3000;电烤箱</p>
+				<p>&#x3000;&#x3000;电炖锅&#x3000;&#x3000;&#x3000;奥克斯厨房</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+
+					<td><a href="">品质高端</a></td>
+					<td><a href="">厨房神器</a></td>
+					<td><a href="">创意厨房</a></td>
+					<td><a href="">店铺热销</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('1F/top1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="1F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="1F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('1F/lun1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="1F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="1F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>厨房热销排行</span><span>好货推荐排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="1F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="1F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="1F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="1F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="1F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="1F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="1F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="1F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="1F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="1F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="1F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="1F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="floor">2F 生活电器</section>
+	<div class="floorBox">
+		<div class="leftPic">
+			<img src="2F/left.jpg" alt="">
+			<div style="background-color: #e9599d;">
+				<p>&#x3000;irobott扫地机&#x3000;&#x3000;挂烫机</p>
+				<p>&#x3000;blueair净化器&#x3000;&#x3000;清凉一夏</p>
+				<p>&#x3000;仲夏补水一下&#x3000;&#x3000;美的全场满减</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+
+					<td><a href="">净化吸尘</a></td>
+					<td><a href="">风扇清凉</a></td>
+					<td><a href="">恒温控件</a></td>
+					<td><a href="">潮流生活</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('2F/top1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="2F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="2F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('2F/lun1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="2F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="2F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>生活电器排行</span><span>应季排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="2F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="2F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="2F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="2F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="2F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="2F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="2F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="2F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="2F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="2F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="2F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="2F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="floor">3F 个护健康</section>
+	<div class="floorBox">
+		<div class="leftPic" >
+			<img src="3F/left.jpg" alt="">
+			<div style="background-color: #ac7ffe">
+				<p>&#x3000;&#x3000;榨汁机&#x3000;&#x3000;&#x3000;料理机</p>
+				<p>&#x3000;&#x3000;咖啡机&#x3000;&#x3000;&#x3000;电烤箱</p>
+				<p>&#x3000;&#x3000;电炖锅&#x3000;&#x3000;&#x3000;奥克斯厨房</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+
+					<td><a href="">品质高端</a></td>
+					<td><a href="">厨房神器</a></td>
+					<td><a href="">创意厨房</a></td>
+					<td><a href="">店铺热销</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('3F/top1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="3F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="3F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('3F/lun1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="3F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="3F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>厨房热销排行</span><span>好货推荐排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="3F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="3F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="3F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="3F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="3F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="3F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="3F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="3F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="3F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="3F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="3F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="3F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="floor">4F 空调</section>
+	<div class="floorBox">
+		<div class="leftPic" >
+			<img src="4F/left.png" alt="">
+			<div style="background-color: #6a98ff">
+				<p>&#x3000;&#x3000;榨汁机&#x3000;&#x3000;&#x3000;料理机</p>
+				<p>&#x3000;&#x3000;咖啡机&#x3000;&#x3000;&#x3000;电烤箱</p>
+				<p>&#x3000;&#x3000;电炖锅&#x3000;&#x3000;&#x3000;奥克斯厨房</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+
+					<td><a href="">品质高端</a></td>
+					<td><a href="">厨房神器</a></td>
+					<td><a href="">创意厨房</a></td>
+					<td><a href="">店铺热销</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('4F/top1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="4F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="4F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('4F/lun1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="4F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="4F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>厨房热销排行</span><span>好货推荐排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="4F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="4F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="4F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="4F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="4F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="4F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="4F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="4F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="4F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="4F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="4F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="4F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="haowuSecond">
+		<a href="" style="background-image: url('5F/kongtiao1.jpg')"></a>
+		<a href="" style="background-image: url('5F/kongtiao2.jpg')"></a>
+		<a href="" style="background-image: url('5F/kongtiao3.jpg')"></a>
+	</div>
+	<section class="floor">5F 冰箱洗衣机</section>
+	<div class="floorBox">
+		<div class="leftPic">
+			<img src="5F/left.jpg" alt="">
+			<div style="background-color: #49c0f1">
+				<p>&#x3000;&#x3000;榨汁机&#x3000;&#x3000;&#x3000;料理机</p>
+				<p>&#x3000;&#x3000;咖啡机&#x3000;&#x3000;&#x3000;电烤箱</p>
+				<p>&#x3000;&#x3000;电炖锅&#x3000;&#x3000;&#x3000;奥克斯厨房</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+					<td><a href="">品质高端</a></td>
+					<td><a href="">厨房神器</a></td>
+					<td><a href="">创意厨房</a></td>
+					<td><a href="">店铺热销</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('5F/top1.png');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="5F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="5F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('5F/lun1.png');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="5F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="5F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>厨房热销排行</span><span>好货推荐排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="5F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="5F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="5F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="5F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="5F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="5F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="5F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="5F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="5F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="5F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="5F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="5F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="floor">6F 平板电视</section>
+	<div class="floorBox">
+		<div class="leftPic">
+			<img src="6F/left.jpg" alt="">
+			<div style="background-color: #44b9ae">
+				<p>&#x3000;&#x3000;榨汁机&#x3000;&#x3000;&#x3000;料理机</p>
+				<p>&#x3000;&#x3000;咖啡机&#x3000;&#x3000;&#x3000;电烤箱</p>
+				<p>&#x3000;&#x3000;电炖锅&#x3000;&#x3000;&#x3000;奥克斯厨房</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+
+					<td><a href="">品质高端</a></td>
+					<td><a href="">厨房神器</a></td>
+					<td><a href="">创意厨房</a></td>
+					<td><a href="">店铺热销</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('6F/top1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="6F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="6F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('6F/lun1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="6F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="6F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>厨房热销排行</span><span>好货推荐排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="6F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="6F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="6F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="6F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="6F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="6F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="6F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="6F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="6F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="6F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="6F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="6F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="floor">7F 厨卫大电</section>
+	<div class="floorBox">
+		<div class="leftPic">
+			<img src="7F/left.png" alt="">
+			<div style="background-color: #a1cd54">
+				<p>&#x3000;&#x3000;榨汁机&#x3000;&#x3000;&#x3000;料理机</p>
+				<p>&#x3000;&#x3000;咖啡机&#x3000;&#x3000;&#x3000;电烤箱</p>
+				<p>&#x3000;&#x3000;电炖锅&#x3000;&#x3000;&#x3000;奥克斯厨房</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+					<td><a href="">品质高端</a></td>
+					<td><a href="">厨房神器</a></td>
+					<td><a href="">创意厨房</a></td>
+					<td><a href="">店铺热销</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('7F/top1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="7F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="7F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('7F/lun1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="7F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="7F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>厨房热销排行</span><span>好货推荐排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="7F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="7F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="7F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="7F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="7F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="7F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="7F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="7F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="7F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="7F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="7F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="7F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="floor">8F 家影配件</section>
+	<div class="floorBox">
+		<div class="leftPic">
+			<img src="8F/left.jpg" alt="">
+			<div style="background-color: #f8c235">
+				<p>&#x3000;&#x3000;榨汁机&#x3000;&#x3000;&#x3000;料理机</p>
+				<p>&#x3000;&#x3000;咖啡机&#x3000;&#x3000;&#x3000;电烤箱</p>
+				<p>&#x3000;&#x3000;电炖锅&#x3000;&#x3000;&#x3000;奥克斯厨房</p>
+			</div>
+		</div>
+		<div class="midPic">
+			<table>
+				<thead>
+				<tr>
+					<td><a href="">热门</a></td>
+					<td><a href="">品质高端</a></td>
+					<td><a href="">厨房神器</a></td>
+					<td><a href="">创意厨房</a></td>
+					<td><a href="">店铺热销</a></td>
+				</tr>
+				</thead>
+
+				<tbody>
+				<tr>
+					<td colspan="3" style="background-image: url('8F/top1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat"></td>
+					<td class="hoverTd">
+						<img src="8F/top2.jpg" alt=""><i>飞利浦（PHILIPS）咖啡机</i><i>HD8652/57 全自动意式现磨</i>
+						<p>￥3999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="8F/top3.jpg" alt=""><i>OLAYKS SF-188D智能预约</i><i>迷你电饭煲1-2-3人学生小电</i>
+						<p>￥99.00</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="shuffing" colspan="3" style="background-image: url('8F/lun1.jpg');background-size: 80%;background-position:40px,10px;background-color: white;background-repeat: no-repeat">
+						<div class="leftArrow"><</div>
+						<div class="rightArrow">></div>
+						<section>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</section>
+					</td>
+					<td class="hoverTd" style="background-image: url('1F/ptag.png')">
+						<img src="8F/bottom2.jpg" alt=""><i>美国维他密斯</i><i>(Vitamix)TNC5200破壁料理</i>
+						<p>￥6999.00</p>
+					</td>
+					<td class="hoverTd">
+						<img src="8F/bottom3.jpg" alt=""><i>美的（Midea）电饭煲</i><i>WFS3018Q 微压蒸汽阀</i>
+						<p>￥169.00</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightPic">
+			<div class="title"><span>厨房热销排行</span><span>好货推荐排行</span></div>
+			<ul>
+				<li><i>1</i>
+					<img src="8F/right11.jpg" alt="">
+					<div>
+						<span>美的（Midea）电饭煲</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="8F/right21.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电压力锅</span>
+						<p>￥469.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="8F/right31.jpg" alt="">
+					<div><span>美国西屋（Westinghouse）</span>
+						<p>￥2280.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="8F/right41.jpg" alt="">
+					<div><span>松下（Panasonic）SD-PM105</span>
+						<p>￥1049.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="8F/right51.jpg" alt="">
+					<div><span>苏泊尔（SUPOR）电水壶电热</span>
+						<p>￥109.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="8F/right61.jpg" alt="">
+					<div><span>长帝（changdi）32升L智能</span>
+						<p>￥498.00</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><i>1</i><img src="8F/right12.jpg" alt="">
+					<div><span>格兰仕（Galanz）黑金</span>
+						<p>￥599.00</p>
+					</div>
+				</li>
+				<li><i>2</i><img src="8F/right22.jpg" alt="">
+					<div><span>意大利德龙（Delonghi）</span>
+						<p>￥4490.00</p>
+					</div>
+				</li>
+				<li><i>3</i><img src="8F/right32.jpg" alt="">
+					<div><span>松下（Panasonic）</span>
+						<p>￥1099.00</p>
+					</div>
+				</li>
+				<li><i>4</i><img src="8F/right42.jpg" alt="">
+					<div><span>美的（Media）家用微波炉</span>
+						<p>￥499.00</p>
+					</div>
+				</li>
+				<li><i>5</i><img src="8F/right52.jpg" alt="">
+					<div><span>飞利浦（PHILIPS）电饭煲</span>
+						<p>￥2999.00</p>
+					</div>
+				</li>
+				<li><i>6</i><img src="8F/right62.jpg" alt="">
+					<div><span>美国维他密斯</span>
+						<p>￥6999.00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="segmentation">
+		<h3 style="font-size: 26px">家电资讯<br></h3>
+	</div>
+	<div id="more">
+		<span>行业潮流风向</span>
+		<a>更多</a>
+	</div>
+	<section id="zixun">
+		<table>
+			<tr>
+				<td><img src="zixun/1.jpg" alt=""></td>
+				<td>
+					<div class="roll">
+						<section>
+						<a href="">· 滤水壶打造净水新方式 外出饮水就靠它</a>
+						<a href="">· 给繁忙生活挤点时间 超快洗洗衣机精选</a>
+						<a href="">· 春困需要安静睡 哪些才是静音洗衣机？</a>
+						<a href="">· 时尚最时尚 厨房大神级超震撼家电力作</a>
+						<a href="">· 自动关火 “健忘”人群必备燃气灶推荐</a>
+						<a href="">· 厨房中的创意家电是送给爱人最贴心的礼物</a>
+						<a href="">· 大容量保鲜冰箱 解决生活中的恼人麻烦</a>
+						<a href="">· 让智能解放双手 这些家电轻松提升生活品质</a>
+						</section>
+						<section></section>
+					</div>
+				</td>
+				<td><img src="zixun/2.jpg" alt=""></td>
+				<td class="roll">
+					<div class="roll">
+						<section>
+							<a href="">· 滤水壶打造净水新方式 外出饮水就靠它</a>
+							<a href="">· 给繁忙生活挤点时间 超快洗洗衣机精选</a>
+							<a href="">· 春困需要安静睡 哪些才是静音洗衣机？</a>
+							<a href="">· 时尚最时尚 厨房大神级超震撼家电力作</a>
+							<a href="">· 自动关火 “健忘”人群必备燃气灶推荐</a>
+							<a href="">· 厨房中的创意家电是送给爱人最贴心的礼物</a>
+							<a href="">· 大容量保鲜冰箱 解决生活中的恼人麻烦</a>
+							<a href="">· 让智能解放双手 这些家电轻松提升生活品质</a>
+						</section>
+						<section></section>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="zixun/3.jpg" alt=""></td>
+				<td class="roll">
+					<div class="roll">
+						<section>
+							<a href="">· 滤水壶打造净水新方式 外出饮水就靠它</a>
+							<a href="">· 给繁忙生活挤点时间 超快洗洗衣机精选</a>
+							<a href="">· 春困需要安静睡 哪些才是静音洗衣机？</a>
+							<a href="">· 时尚最时尚 厨房大神级超震撼家电力作</a>
+							<a href="">· 自动关火 “健忘”人群必备燃气灶推荐</a>
+							<a href="">· 厨房中的创意家电是送给爱人最贴心的礼物</a>
+							<a href="">· 大容量保鲜冰箱 解决生活中的恼人麻烦</a>
+							<a href="">· 让智能解放双手 这些家电轻松提升生活品质</a>
+						</section>
+						<section></section>
+					</div>
+				</td>
+				<td><img src="zixun/4.jpg" alt=""></td>
+				<td class="roll">
+					<div class="roll">
+						<section>
+							<a href="">· 滤水壶打造净水新方式 外出饮水就靠它</a>
+							<a href="">· 给繁忙生活挤点时间 超快洗洗衣机精选</a>
+							<a href="">· 春困需要安静睡 哪些才是静音洗衣机？</a>
+							<a href="">· 时尚最时尚 厨房大神级超震撼家电力作</a>
+							<a href="">· 自动关火 “健忘”人群必备燃气灶推荐</a>
+							<a href="">· 厨房中的创意家电是送给爱人最贴心的礼物</a>
+							<a href="">· 大容量保鲜冰箱 解决生活中的恼人麻烦</a>
+							<a href="">· 让智能解放双手 这些家电轻松提升生活品质</a>
+						</section>
+						<section></section>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<section id="fenge"></section>
+	<section id="bottomInfo">
+		<section id="leftInfo">
+			<img src="zixun/left.jpg" alt="">
+		</section>
+		<section id="rightInfo">
+			<table>
+				<tr>
+					<td><img src="zixun/td1.jpg" alt=""></td>
+					<td><img src="zixun/td2.jpg" alt=""></td>
+				</tr>
+				<tr>
+					<td><img src="zixun/td3.jpg" alt=""></td>
+					<td><img src="zixun/td4.jpg" alt=""></td>
+				</tr>
+			</table>
+		</section>
+	</section>
+	<div id="promiseBox">
+		<section id="promise" style="background-image: url('footer/promise.jpg')"></section>
+	</div>
+	<section id="promise2">
+		<i style="background-image: url('footer/p1.png')"></i>
+		<i style="background-image: url('footer/p2.png')"></i>
+		<i style="background-image: url('footer/p3.png')"></i>
+		<i style="background-image: url('footer/p4.png')"></i>
+	</section>
+	<section id="footer">
+		<section id="subfooter">
+			<ul>
+				<li>购物指南</li>
+				<li>购物流程</li>
+				<li>会员介绍</li>
+				<li>生活旅行/团购</li>
+				<li>常见问题</li>
+				<li>大家电</li>
+				<li>联系客服</li>
+			</ul>
+			<ul>
+				<li>配送方式</li>
+				<li>上门自提</li>
+				<li>211限时达</li>
+				<li>配送服务查询</li>
+				<li>配送费收取标准</li>
+				<li>海外配送</li>
+			</ul>
+			<ul>
+				<li>支付方式</li>
+				<li>货到付款</li>
+				<li>在线支付</li>
+				<li>分期付款</li>
+				<li>邮局汇款</li>
+				<li>公司转账</li>
+			</ul>
+			<ul>
+				<li>售后服务</li>
+				<li>售后政策</li>
+				<li>价格保护</li>
+				<li>退款说明</li>
+				<li>返修/退换货</li>
+				<li>取消订单</li>
+			</ul>
+			<ul>
+				<li>特色服务</li>
+				<li>夺宝岛</li>
+				<li>DIY装机</li>
+				<li>延保服务</li>
+				<li>京东E卡</li>
+				<li>京东通信</li>
+				<li>京东JD+</li>
+			</ul>
+		</section>
+
+	</section>
+	<footer>
+		 <p><a href="">关于我们</a>&#x3000;|&#x3000;<a href="">联系我们</a>&#x3000;|&#x3000;<a href="">联系客服</a>&#x3000;|&#x3000;<a
+				 href="">合作招商</a>&#x3000;|&#x3000;<a href="">营销中心</a>&#x3000;|&#x3000;<a href="">友情链接</a>&#x3000;|&#x3000;<a
+				 href="">销售联盟</a>&#x3000;|&#x3000;<a href="">京东社区</a>&#x3000;|&#x3000;<a href="">风险监测</a>&#x3000;|&#x3000;<a
+				 href="">隐私政策</a>&#x3000;|&#x3000;<a href="">京东公益</a>&#x3000;|&#x3000;<a href="">English Site</a>&#x3000;|&#x3000;<a
+				 href="">Media & IR</a>
+		 </p>
+		<p><i style="background-image: url('footer/check.png')"></i><a href="">京公网安备110000020000088号</a>&#x3000;|&#x3000;京ICP证070359号&#x3000;|&#x3000;<a
+				href="">互联网药品信息服务资格证编号（京)-经营性-2014-0008</a>&#x3000;|&#x3000;新出发京零 字第大120007号</p>
+		<p>互联网出版许可证编号新出网证(京)字150号&#x3000;|&#x3000;<a href="">出版物经营许可证</a>&#x3000;|&#x3000;<a href="">网络文化经营许可证京网文[2014]2148-348号</a>&#x3000;|&#x3000;违法和不良信息举报电话：4006561155</p>
+		<p>Copyright © 2004-2017  京东JD.com 版权所有&#x3000;|&#x3000;消费者维权热线：4006067733&#x3000;&#x3000;<a href="">经营执照</a></p>
+		<p>京东旗下网站：<a href="">京东钱包</a></p>
+		<div>
+			<i style="background-image: url('footer/11.png')"></i>
+			<i style="background-image: url('footer/22.png')"></i>
+			<i style="background-image: url('footer/33.jpg')"></i>
+			<i style="background-image: url('footer/44.png')"></i>
+			<i style="background-image: url('footer/55.jpg')"></i>
+			<i style="background-image: url('footer/66.jpg')"></i>
+		</div>
+	</footer>
+
+</main>
+<script src="js/jquery.js"></script>
+<script src="js/less.min.js"></script>
+<script src="js/miaosha.js"></script>
+<script src="js/菜单.js"></script>
+<script src="js/home_appliance.js"></script>
+</body>
+</html>

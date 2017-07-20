@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/RegisterStyle.css" />
+	</head>
+
+	<body>
+		<div id="form-header" class="header">
+			<div class="logo-con w clearfix">
+				<a href="" class="logo"></a>
+				<div class="logo-title">欢迎注册</div>
+				<div class="have-account">已有账号？
+					<a href="/tologin">请登录</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="main_container">
+			<div class="left_side">
+				<form action="/register" method="post">
+					<!--用户名-->
+					<div style="display:flex;" class="form_item_wrap">
+						<div class="head_title">用 户 名</div>
+						<input id="account" name="name" placeholder="您的账户名和登录名" data-index="0" required/>
+					</div>
+					<div class="tips">
+						支持中文、字母、数字、“-”“_”的组合，4-20个字符
+					</div>
+
+					<!--密码-->
+					<div style="display: flex;" class="form_item_wrap">
+						<div class="head_title">设 置 密 码</div>
+						<input id="pwd" type="text" name="psw" placeholder="建议至少使用两种字符组合" data-index="1" required/>
+					</div>
+					<div class="tips">
+						建议使用字母、数字和符号两种及以上的组合，6-20个字符
+					</div>
+
+					<!--确认密码-->
+					<div style="display: flex;" class="form_item_wrap">
+						<div class="head_title">确 认 密 码</div>
+						<input id="confirmPwd" name="confirmPsw" placeholder="请再次输入密码" data-index="2" required />
+					</div>
+					<div class="tips">
+						请再次输入密码
+					</div>
+
+					<!--手机号-->
+					<!--<div style="display: flex;" class="form_item_wrap">
+						<div class="head_title" style="border-right: 1px solid lightgray;">中国 0086</div>
+						<input type="text" name="phoneNumber" placeholder="建议使用常用手机" data-index="3" />
+					</div>
+					<div class="tips">
+						完成验证后，你可以用该邮箱登录和找回密码
+					</div>-->
+
+					<!--验证码-->
+					<div style="display: flex;" class="form_item_wrap">
+						<div style="width: 178px;" class="head_title">验 证 码</div>
+						<input id="verificationode" name="code" placeholder="请输入验证码" data-index="4" required/>
+						<div id="getCode" onclick="showCode()">获取验证码</div>
+					</div>
+					<div class="tips">
+						看不清？点击图片更换验证码
+					</div>
+
+					<div style="height: 80px;width: 100%;line-height: 80px;">
+						<input type="checkbox" /> 阅读并同意
+						<a style="text-decoration: none;color: dodgerblue;font-size: 14px;">《京东用户注册协议》</a>
+					</div>
+
+					<button>立即注册</button>
+				</form>
+			</div>
+
+			<div class="right_side">
+				<div id="form-company" class="reg-other">
+					<div class="company-reg">
+						<a href="">
+							<i class="i-company"></i>
+							<span>企业用户注册</span>
+						</a>
+					</div>
+					<div class="inter-cust">
+						<a href="">
+							<i class="i-global"></i>
+							<span>INTERNATIONAL<br>CUSTOMERS</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="js/jquery.js"></script>
+
+		<script>
+			$("form").submit(function(e) {
+				console.log("111");
+				e.preventDefault();
+				if(checkForm()) {
+					$.post(
+						$(this).attr("action"),
+						$(this).serialize(),
+						function(result) {
+							if(result.code == "success") {
+								if(confirm(result.msg)) {
+									location.href = "/tologin";
+								}
+							} else {
+								alert(result.msg);
+							}
+						}
+					)
+				} else {
+					//alert("请检查输入");
+				}
+
+			})
+
+			function checkForm() {
+				if($('#pwd').val()!=$('#confirmPwd').val()) {
+					alert('两次输入密码不一致!')
+					return false;
+				} else{
+					if($('#verificationode').val() != confirmStr ) {
+						alert('验证码输入不正确，请重新输入！')
+						return false;
+					}
+				}
+				return true;
+			}
+			$(".left_side form input").focus(function() {
+				$(".tips").each(function() {
+					$(this).css('opacity', '0');
+				})
+				var index = $(this).attr("data-index");
+				$(".tips").eq(index).css("opacity", "1");
+			})
+		
+			var confirmStr = '';
+			function showCode() {
+				var num_arr = [];
+				for(var i = 48; i <= 57; i++) {
+					var num = String.fromCharCode(i);
+					num_arr.push(num);
+				}
+				var letter_arr = [];
+				for(var i = 97; i <= 122; i++) {
+					var letter = String.fromCharCode(i);
+					letter_arr.push(letter);
+				}
+				var newArr = letter_arr.concat(num_arr);
+				
+				for(var i = 0; i < 4; i++) {
+					var random = Math.floor(Math.random() * (newArr.length - i));
+					confirmStr += newArr[random];
+					newArr.splice(random, 1);
+				}
+				$("#getCode").text(confirmStr);
+			}
+		</script>
+	</body>
+
+</html>

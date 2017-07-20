@@ -1,0 +1,3297 @@
+
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+	margin: 0px;
+	padding: 0px;
+}
+
+button,
+html input[type="button"],
+input[type="submit"] {
+	cursor: pointer;
+}
+
+ol,
+ul {
+	list-style: outside none none;
+}
+
+img {
+	border: 0px none;
+	vertical-align: middle;
+}
+
+em,
+i,
+u {
+	font-style: normal;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.hide {
+	display: none;
+}
+
+.clear,
+.clr {
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0px;
+	line-height: 0;
+	font-size: 0px;
+}
+
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+
+
+.dorpdown {
+	position: relative;
+}
+
+.dorpdown-layer {
+	display: none;
+	position: absolute;
+}
+
+.dorpdown:hover .dorpdown-layer,
+.hover .dorpdown-layer {
+	display: block;
+}
+
+.cw-icon {
+	position: relative;
+	cursor: default;
+}
+
+.cw-icon .i,
+.cw-icon i {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+}
+
+.fr .cw-icon .iconfont {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+}
+
+.w {
+	width: 990px;
+	margin: 0px auto;
+}
+
+.root61 .w,
+.w1210 .w {
+	width: 1210px;
+}
+
+body {
+	font: 12px/150% tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "u5b8bu4f53", sans-serif;
+	color: rgb(102, 102, 102);
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+a {
+	color: rgb(102, 102, 102);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(200, 22, 35);
+}
+
+.m,
+.mb,
+.mc,
+.mt,
+.sm,
+.smb,
+.smc,
+.smt {
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: "iconfont";
+	src: url('iconfont.eot') format("embedded-opentype"), url('iconfont.woff') format("woff"), url('iconfont.ttf') format("truetype"), url('iconfont.svg') format("svg");
+}
+
+.iconfont {
+	font-family: iconfont;
+	font-style: normal;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#top-nav {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background: rgb(227, 228, 229) none repeat scroll 0% 0%;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+#top-nav .w {
+	background: rgb(227, 228, 229) none repeat scroll 0% 0%;
+	color: rgb(153, 153, 153);
+}
+
+#top-nav a {
+	color: rgb(153, 153, 153);
+}
+
+#top-nav a:hover {
+	color: rgb(200, 22, 35);
+}
+
+#top-nav li {
+	float: left;
+	height: 30px;
+	padding: 0px 2px;
+}
+
+#top-nav li#ttbar-navs {
+	padding: 0px 1px 0px 2px;
+}
+
+#top-nav li#ttbar-navs.hover,
+#top-nav li#ttbar-navs:hover {
+	padding: 0px 0px 0px 1px;
+}
+
+#top-nav li.dorpdown {
+	z-index: 13;
+}
+
+#top-nav li.dorpdown:hover {
+	padding: 0px 1px;
+}
+
+#top-nav li.dorpdown:hover .dt {
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	border-style: solid;
+	border-color: rgb(221, 221, 221);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-width: 0px 1px;
+}
+
+#top-nav li#ttbar-apps .dt {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px;
+}
+
+#top-nav li.spacer {
+	width: 1px;
+	height: 12px;
+	margin-top: 9px;
+	padding: 0px;
+	background: rgb(204, 204, 204) none repeat scroll 0% 0%;
+	overflow: hidden;
+}
+
+#top-nav .dt {
+	float: left;
+	padding: 0px 8px;
+}
+
+#top-nav .dd {
+	line-height: 24px;
+}
+
+#top-nav .dorpdown-layer {
+	top: 30px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+#top-nav .dd-spacer {
+	position: absolute;
+	top: -7px;
+	height: 10px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	overflow: hidden;
+}
+
+#top-nav .style-red {
+	color: rgb(243, 2, 19);
+}
+
+#top-nav #ttbar-home .iconfont {
+	position: relative;
+	display: inline;
+	font-size: 16px;
+	color: rgb(92, 84, 82);
+	padding-right: 5px;
+}
+
+#top-nav #ttbar-login {
+	margin-right: 10px;
+}
+
+#top-nav #ttbar-login .link-login {
+	font-family: "verdana,simsun";
+}
+
+#top-nav #ttbar-apps .dt {
+	padding: 0px 8px;
+}
+
+#top-nav #ttbar-apps .dd {
+	width: 190px;
+	border-bottom: 3px solid rgb(96, 87, 90);
+}
+
+#top-nav #ttbar-apps .dorpdown-layer {
+	right: 0px;
+}
+
+#top-nav #ttbar-apps .dd-spacer {
+	position: absolute;
+	display: block;
+	top: -9px;
+	left: 154px;
+	margin-left: -5px;
+	width: 0px;
+	height: 0px;
+	line-height: 0;
+	font-size: 0px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(228, 228, 228) rgb(228, 228, 228) rgb(255, 255, 255);
+}
+
+#top-nav #ttbar-atte .dt,
+#top-nav #ttbar-serv .dt {
+	width: 49px;
+	padding-right: 25px;
+}
+
+#top-nav #ttbar-atte .dd,
+#top-nav #ttbar-serv .dd {
+	width: 82px;
+	padding-bottom: 8px;
+}
+
+#top-nav #ttbar-atte .item,
+#top-nav #ttbar-serv .item {
+	display: inline-block;
+	width: 70px;
+	padding-left: 15px;
+}
+
+#top-nav #ttbar-atte .dd-spacer,
+#top-nav #ttbar-serv .dd-spacer {
+	left: 0px;
+	width: 82px;
+}
+
+#top-nav #ttbar-serv .dd {
+	width: 170px;
+}
+
+#top-nav #ttbar-serv .item {
+	padding-left: 10px;
+}
+
+#top-nav #ttbar-serv .item-business,
+#top-nav #ttbar-serv .item-client {
+	font-weight: 700;
+	padding-left: 10px;
+	color: rgb(102, 102, 102);
+}
+
+#top-nav #ttbar-serv .item-business {
+	border-top: 1px dotted rgb(238, 238, 238);
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#top-nav #ttbar-navs .dt {
+	width: 49px;
+	padding-right: 25px;
+}
+
+#top-nav #ttbar-navs .dd {
+	right: -69px;
+	width: 988px;
+	padding: 20px 0px 16px;
+}
+
+#top-nav #ttbar-navs dl {
+	float: left;
+	width: 201px;
+	padding-left: 20px;
+	border-left: 1px solid rgb(238, 238, 238);
+}
+
+#top-nav #ttbar-navs dl.fore1 {
+	border-left: medium none;
+	width: 301px;
+}
+
+#top-nav #ttbar-navs dt {
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 6px;
+	color: rgb(102, 102, 102);
+}
+
+#top-nav #ttbar-navs .item {
+	float: left;
+	width: 100px;
+}
+
+#top-nav #ttbar-navs .dd-spacer {
+	right: 69px;
+	width: 82px;
+}
+
+.root61 #top-nav #ttbar-navs .dd {
+	width: 1208px;
+}
+
+.root61 #top-nav #ttbar-navs .fore2 {
+	display: block;
+}
+
+.root61 #top-nav #ttbar-navs dl {
+	width: 259px;
+}
+
+.root61 #top-nav #ttbar-navs dl.fore1 {
+	width: 347px;
+}
+
+.root61 #top-nav #ttbar-navs .item {
+	width: 86px;
+}
+
+#logo-2014 {
+	position: relative;
+	z-index: 12;
+	float: left;
+	width: 276px;
+	height: 50px;
+	margin: 15px 0px 22px;
+}
+
+#logo-2014 .logo {
+	display: block;
+	margin-top: 6px;
+	width: 276px;
+	height: 44px;
+	background: rgba(0, 0, 0, 0) url(../img/jdlogo-201705-@1x.png) no-repeat scroll 0px 50% / 277px 44px;
+	text-indent: -20000px;
+}
+
+@media not all,
+not all,
+not all,
+not all {
+	#logo-2014 .logo {
+		background-image: url(../img/jdlogo-201705-@2x.png);
+	}
+}
+
+@media not all,
+not all,
+not all,
+not all {}
+
+#search-2014 {
+	position: relative;
+	z-index: 11;
+	float: left;
+	width: 384px;
+	margin: 27px 95px 0px;
+}
+
+#search-2014 .form {
+	width: 384px;
+	height: 36px;
+}
+
+#search-2014 .text {
+	float: left;
+	width: 294px;
+	height: 24px;
+	line-height: 24px;
+	color: rgb(178, 178, 178);
+	padding: 4px;
+	margin-bottom: 4px;
+	border-width: 2px 0px 2px 2px;
+	border-color: rgb(243, 2, 19);
+	border-style: solid;
+	outline: 0px none;
+	font-size: 12px;
+}
+
+#search-2014 .button {
+	float: left;
+	width: 80px;
+	height: 36px;
+	font-family: tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "u5b8bu4f53", sans-serif;
+	background: rgb(243, 2, 19) none repeat scroll 0% 0%;
+	border: medium none;
+	line-height: 1;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#search-2014 .cw-icon i {
+	top: 0px;
+	left: 0px;
+	width: 82px;
+	height: 36px;
+}
+
+#hotwords {
+	float: left;
+	padding-left: 75px;
+	width: 384px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+#hotwords a {
+	margin-right: 10px;
+	color: rgb(178, 178, 178);
+}
+
+#hotwords a:hover {
+	color: rgb(200, 22, 35);
+}
+
+#shelper {
+	overflow: hidden;
+	position: absolute;
+	top: 36px;
+	left: 0px;
+	width: 382px;
+	border: 1px solid rgb(204, 204, 204);
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+.root61 #search-2014 {
+	width: 584px;
+	margin: 27px 105px 0px;
+}
+
+.root61 #search-2014 .form {
+	width: 584px;
+}
+
+.root61 #search-2014 .text {
+	width: 494px;
+}
+
+.root61 #shelper {
+	width: 582px;
+}
+
+#ttbar-myjd .dt {
+	width: 49px;
+	padding-right: 25px;
+}
+
+#ttbar-myjd .dorpdown-layer {
+	width: 280px;
+}
+
+#ttbar-myjd .myjdlist1,
+#ttbar-myjd .myjdlist2 {
+	width: 265px;
+	padding: 5px 0px 5px 15px;
+	overflow: hidden;
+}
+
+#ttbar-myjd .myjdlist1 .fore1,
+#ttbar-myjd .myjdlist1 .fore2,
+#ttbar-myjd .myjdlist2 .fore1,
+#ttbar-myjd .myjdlist2 .fore2 {
+	float: left;
+	width: 126px;
+}
+
+#ttbar-myjd .myjdlist2 {
+	border-top: 1px solid rgb(241, 241, 241);
+}
+
+#ttbar-myjd .viewlist {
+	width: 250px;
+	padding: 10px 15px;
+	border-top: 1px solid rgb(241, 241, 241);
+}
+
+#ttbar-myjd .viewlist .smt {}
+
+#ttbar-myjd .viewlist .smt h4 {
+	float: left;
+}
+
+#ttbar-myjd .viewlist .smt .extra {
+	float: right;
+}
+
+#ttbar-myjd .dd-spacer {
+	left: 0px;
+	width: 82px;
+}
+
+#categorys-2014 .item-sub::after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+#settleup-2014 {
+	float: right;
+	z-index: 11;
+	height: 36px;
+	margin-top: 27px;
+}
+
+#settleup-2014 .cw-icon {
+	width: 91px;
+	height: 34px;
+	border: 1px solid rgb(223, 223, 223);
+	padding: 0px 28px 0px 19px;
+	background: rgb(249, 249, 249) none repeat scroll 0% 0%;
+	line-height: 34px;
+}
+
+#settleup-2014 .cw-icon a {
+	color: rgb(243, 2, 19);
+}
+
+#settleup-2014 .ci-left {
+	top: 9px;
+	left: 90px;
+	width: 16px;
+	height: 16px;
+	background: rgba(0, 0, 0, 0) url(../img/settleup-@1x.png) no-repeat scroll 0% 0% / 16px 16px;
+	overflow: hidden;
+}
+
+@media not all,
+not all,
+not all,
+not all {
+	#settleup-2014 .ci-left {
+		background-image: url(../img/settleup-@2x.png);
+	}
+}
+
+#settleup-2014 .ci-right {
+	display: none;
+	top: 13px;
+	right: 12px;
+	height: 10px;
+	width: 10px;
+	background: rgba(0, 0, 0, 0) url(../img/right-@1x.png) no-repeat scroll 0% 0% / 10px 10px;
+	overflow: hidden;
+}
+
+#settleup-2014 .ci-count {
+	position: absolute;
+	top: 7px;
+	left: 105px;
+	display: inline-block;
+	padding: 1px;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: -1px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(218, 16, 38);
+	border-radius: 7px;
+	width: 14px;
+	font-family: tahoma, arial;
+	text-align: center;
+}
+
+#settleup-2014.hover .dorpdown-layer,
+#settleup-2014:hover .dorpdown-layer {
+	display: block;
+	right: 0px;
+	width: 308px;
+}
+
+#settleup-2014.hover .spacer,
+#settleup-2014:hover .spacer {
+	position: absolute;
+	right: 0px;
+	top: -7px;
+	width: 138px;
+	height: 12px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+#settleup-content {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+#settleup-content .loading {
+	display: block;
+	height: 50px;
+	background: rgba(0, 0, 0, 0) url(../img/loading.gif) no-repeat scroll center center;
+}
+
+.root61 #settleup-2014 {
+	margin-right: 0px;
+}
+
+
+/* ::::: https://static.360buyimg.com/mtd/pc/cms/css/common.min.css ::::: */
+
+body {}
+
+.main_container {
+	font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b体, sans-serif;
+	background: rgb(246, 246, 246) none repeat scroll 0% 0%;
+	overflow: hidden;
+}
+
+.main_container,
+body {
+	min-width: 1190px;
+}
+
+.grid_c1 {
+	width: 1190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.o2_wide .w {
+	width: 1200px;
+}
+
+.o2data-lazyload {
+	background: rgb(255, 255, 255) url(../img/lazyload.gif) no-repeat scroll 50% center;
+}
+
+.main_container img {
+	background: rgba(0, 0, 0, 0) url(../img/error-jd.gif) no-repeat scroll 50% 50%;
+}
+
+.o2_wide #logo-2014 {
+	width: 350px;
+}
+
+.o2_wide #search-2014 {
+	width: 540px;
+	margin: 27px 80px 0px;
+}
+
+.o2_wide #search-2014 .text {
+	width: 450px;
+}
+
+.o2_wide #settleup-2014 {
+	margin-right: 0px;
+}
+#footer-2014 {
+	border-top: 1px solid rgb(229, 229, 229);
+	padding: 20px 0px 30px;
+	text-align: center;
+}
+
+#footer-2014 .links a {
+	margin: 0px 5px;
+}
+
+#footer-2014 .copyright {
+	margin: 10px 0px;
+}
+
+#footer-2014 .authentication a {
+	margin: 0px 5px;
+	text-decoration: none;
+}
+
+.root61 #footer-2014 .links a {
+	margin: 0px 10px;
+}
+
+#search-2014 .button {
+	width: 80px;
+}
+
+.o2_wide #shelper {
+	width: 538px;
+}
+
+.o2_wide #hotwords {
+	width: 462px;
+	padding-left: 80px;
+}
+
+#search-2014,
+#settleup-2014 {
+	margin-top: 27px;
+}
+
+#cmsfooter {
+	min-height: 480px;
+}
+
+
+#service-2014 {
+	margin-bottom: 20px;
+}
+
+#service-2014 dl {
+	float: left;
+	width: 222px;
+}
+
+#service-2014 dl.fore5 {
+	width: 100px;
+}
+
+#service-2014 dt {
+	padding: 6px 0px;
+	font: 400 16px/24px "microsoft yahei";
+}
+
+#service-2014 dd {
+	line-height: 20px;
+}
+
+#service-2014 .slogen {
+	position: relative;
+	height: 54px;
+	padding: 20px 0px;
+	margin-bottom: 14px;
+	background: rgb(245, 245, 245) none repeat scroll 0% 0%;
+	text-align: center;
+}
+
+#service-2014 .slogen .item b {
+	padding: 0px 10px;
+	font-size: 24px;
+	color: rgb(200, 22, 35);
+}
+
+#service-2014 .slogen .fore1 {
+	margin-left: -490px;
+}
+
+#service-2014 .slogen .fore1 i {
+	background-image: url(../img/service_items_1.png);
+}
+
+#service-2014 .slogen .fore2 {
+	margin-left: -245px;
+}
+
+#service-2014 .slogen .fore2 i {
+	background-image: url(../img/service_items_2.png);
+}
+
+#service-2014 .slogen .fore3 {
+	margin-left: 0px;
+}
+
+#service-2014 .slogen .fore3 i {
+	background-image: url(../img/service_items_3.png);
+}
+
+#service-2014 .slogen .fore4 {
+	margin-left: 245px;
+}
+
+#service-2014 .slogen .fore4 i {
+	background-image: url(../img/service_items_4.png);
+}
+
+.root61 #service-2014 dl {
+	width: 275px;
+}
+
+.root61 #service-2014 dl.fore5 {
+	width: 100px;
+}
+
+.root61 #service-2014 .slogen .item {
+	width: 302px;
+}
+
+.root61 #service-2014 .slogen .fore1 {
+	margin-left: -604px;
+}
+#service-2014 .slogen {
+	position: relative;
+	height: 54px;
+	padding: 20px 0px;
+	margin-bottom: 14px;
+	background: rgb(245, 245, 245) none repeat scroll 0% 0%;
+	text-align: center;
+}
+
+#service-2014 .slogen .item {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	width: 245px;
+	height: 54px;
+	text-align: left;
+	vertical-align: middle;
+	font: 400 18px/50px "microsoft yahei";
+}
+
+#service-2014 .slogen .item i {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 220px;
+	height: 54px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+
+.root61 #service-2014 .slogen .fore2 {
+	margin-left: -304px;
+}
+
+.root61 #service-2014 .slogen .fore3 {
+	margin-left: 0px;
+}
+
+.root61 #service-2014 .slogen .fore4 {
+	margin-left: 304px;
+}
+
+
+#logo-2014 {
+	width: 382px;
+	height: 56px;
+	padding: 0px;
+	margin-top: 26px;
+	margin-bottom: 22px;
+}
+
+#logo-2014 .logo {
+	position: absolute;
+	left: 0px;
+	margin-top: 0px;
+	background-image: url(../img/sprite_chaoshi_mod_header@1x.png);
+	background-position: 0px 0px;
+	background-size: 213px 82px;
+	background-repeat: no-repeat;
+	width: 213px;
+	height: 54px;
+}
+
+.logo_dropdown {
+	position: absolute;
+	width: 90px;
+	top: 12px;
+	left: 234px;
+	z-index: 3;
+}
+
+.dropdown_locate {
+	background-image: url(../img/sprite_chaoshi_mod_header@1x.png);
+	background-position: 0px -56px;
+	background-size: 213px 82px;
+	background-repeat: no-repeat;
+	width: 17px;
+	height: 26px;
+}
+
+.dropdown_wrap {
+	width: 65px;
+	height: 26px;
+	margin-left: 6px;
+}
+
+.logo_dropdown .dropdown_box {
+	height: 24px;
+	border-bottom: 2px solid rgb(201, 21, 35);
+}
+
+.logo_dropdown .dropdown_box .dt {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 0px;
+	line-height: 24px;
+}
+
+.logo_dropdown .dropdown_box .ui-areamini-text {
+	overflow: hidden;
+	text-align: center;
+	color: rgb(201, 21, 35);
+	font-size: 14px;
+	margin-left: -5px;
+}
+
+.logo_dropdown .cw-icon i {
+	right: 0px;
+	top: 9px;
+	text-indent: -9999px;
+	transition: transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, -moz-transform 0.1s ease 0s;
+	background-image: url(../img/sprite_chaoshi_mod_header@1x.png);
+	background-position: -19px -56px;
+	background-size: 213px 82px;
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 7px;
+}
+
+.dropdown_wrap li .dd {
+	line-height: 24px;
+}
+
+.dropdown_wrap .dropdown_box .dd {
+	width: 301px;
+	padding: 10px 0px 10px 10px;
+}
+
+.dropdown_wrap li .dorpdown-layer {
+	top: 26px;
+	left: -1px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.dropdown_wrap .dropdown_box .dorpdown-layer .item {
+	float: left;
+	width: 60px;
+	padding: 2px 0px;
+}
+
+.dropdown_wrap .dropdown_box .dorpdown-layer .item a {
+	float: left;
+	padding: 0px 8px;
+}
+
+#search-2014 .button {
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+}
+
+#search-2014 .text {
+	border-color: rgb(255, 161, 51);
+}
+
+.o2_retina #logo-2014 .logo {
+	background-position: 0px 0px;
+	width: 213px;
+	height: 54px;
+}
+
+.o2_retina #logo-2014 .logo,
+.o2_retina .dropdown_locate {
+	background-image: url(../img/sprite_chaoshi_mod_header@2x.png);
+	background-size: 213px 81px;
+	background-repeat: no-repeat;
+}
+
+.o2_retina .dropdown_locate {
+	background-position: 0px -55px;
+	width: 17px;
+	height: 26px;
+}
+
+.o2_retina .logo_dropdown .cw-icon i {
+	background-image: url(../img/sprite_chaoshi_mod_header@2x.png);
+	background-position: -18px -55px;
+	background-size: 213px 81px;
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 7px;
+}
+
+
+.chaoshi_rec {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.chaoshi_fs {
+	position: relative;
+	min-height: 583px;
+	margin-bottom: 15px;
+}
+
+.chaoshi_menu {
+	background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+	height: 33px;
+	font-size: 0px;
+}
+
+.chaoshi_menu_list {
+	padding-left: 190px;
+}
+
+.chaoshi_menu_list_item {
+	position: relative;
+	margin-left: -1px;
+	font-size: 0px;
+}
+
+.chaoshi_menu_list_link {
+	display: inline-block;
+	line-height: 33px;
+	padding: 0px 13px;
+	font-size: 14px;
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+
+.chaoshi_menu_list_link:hover {
+	color: rgb(255, 161, 51);
+}
+
+.o2_wide .chaoshi_menu_list_link {
+	padding: 0px 24px;
+}
+
+.chaoshi_menu_list_link_on {
+	color: rgb(255, 161, 51);
+}
+
+.chaoshi_menu_list_split {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -6px;
+	width: 1px;
+	height: 12px;
+	background-color: rgb(204, 204, 204);
+}
+
+.chaoshi_menu_ad_item {
+	margin-left: 14px;
+	color: rgb(60, 60, 60);
+	font-size: 14px;
+}
+
+.o2_wide .chaoshi_menu_ad_item {
+	margin-left: 26px;
+}
+
+.chaoshi_menu_ad_item_first {
+	margin-left: 0px;
+}
+
+.chaoshi_menu_ad_icon,
+.chaoshi_menu_ad_txt {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 33px;
+}
+
+.chaoshi_menu_ad_icon {
+	margin-right: 7px;
+	width: 22px;
+	height: 21px;
+}
+
+.chaoshi_nav {
+	width: 190px;
+	position: absolute;
+	top: -33px;
+	left: 0px;
+	height: 583px;
+	z-index: 6;
+}
+
+.chaoshi_nav_header {
+	height: 33px;
+	line-height: 33px;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: 700;
+	padding-left: 15px;
+	background-color: rgb(255, 161, 51);
+}
+
+.chaoshi_nav_body {
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+
+.chaoshi_nav_body .item {
+	height: 60px;
+	padding: 0px 15px;
+	border-top: 1px solid rgb(255, 255, 255);
+	border-left: 1px solid rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+}
+
+.chaoshi_nav_body .item_last {
+	height: 61px;
+}
+
+.chaoshi_nav_body .item_last .item_header {
+	border-bottom-color: rgb(255, 255, 255);
+}
+
+.chaoshi_nav_body .item_decoration {
+	display: none;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	top: 0px;
+	right: -16px;
+	background-color: rgb(255, 255, 255);
+	z-index: 22;
+}
+
+.chaoshi_nav_body .item_header {
+	padding-top: 11px;
+	border-bottom: 1px solid transparent;
+	width: 159px;
+	height: 49px;
+	position: relative;
+}
+
+.chaoshi_nav_body .item_header_title {
+	color: rgb(51, 51, 51);
+	margin-bottom: 2px;
+	position: relative;
+	height: 20px;
+	font-weight: 400;
+}
+
+.chaoshi_nav_body .item_header_title_arrow {
+	position: absolute;
+	right: 0px;
+	top: 4px;
+	display: block;
+	width: 5px;
+	height: 9px;
+	font-size: 14px;
+	font-family: simsun;
+	font-weight: 400;
+}
+
+.chaoshi_nav_body .item_header_sublinks {
+	font-size: 12px;
+	color: rgb(153, 153, 153);
+	height: 18px;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.chaoshi_nav_body .item_header_sublinks_link {
+	font-size: 12px;
+	color: rgb(153, 153, 153);
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.chaoshi_nav_body .item_header_sublinks_link:hover {
+	color: rgb(255, 161, 51);
+}
+
+.chaoshi_nav_body .item_header_sublinks_link_first {
+	margin-left: 0px;
+}
+
+.chaoshi_nav_body .item_header_sublinks_link_last {
+	margin-right: 0px;
+}
+
+.chaoshi_nav_body .item_body {
+	position: absolute;
+	left: 190px;
+	top: 0px;
+	background-color: rgb(255, 255, 255);
+	width: 1000px;
+	display: none;
+	box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.2);
+	visibility: hidden;
+	z-index: 1001;
+}
+
+.item_body_wrapper {
+	border-top: 1px solid rgb(221, 221, 221);
+	border-left: 1px solid rgb(221, 221, 221);
+	border-bottom: 1px solid rgb(221, 221, 221);
+	padding: 30px 30px 52px 56px;
+}
+
+.chaoshi_nav_sub {
+	width: 692px;
+	min-height: 1px;
+	position: relative;
+	float: left;
+}
+
+.chaoshi_nav_sub_item {
+	float: left;
+	width: 190px;
+	height: 93px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.chaoshi_nav_sub_title {
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+	font-weight: 700;
+	padding-bottom: 4px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.chaoshi_nav_sub_main {
+	padding-top: 6px;
+}
+
+.chaoshi_nav_sub_main_link {
+	margin-right: 14px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: rgb(119, 119, 119);
+	display: inline-block;
+}
+
+.chaoshi_nav_sub_main_link:hover {
+	color: rgb(255, 161, 51);
+}
+
+.chaoshi_nav_recommend {
+	float: left;
+	width: 220px;
+}
+
+.chaoshi_nav_recommend_link {
+	display: block;
+	width: 100%;
+	height: 95px;
+	margin-bottom: 20px;
+}
+
+.chaoshi_nav_recommend_link_last {
+	margin-bottom: 0px;
+}
+
+.chaoshi_nav_recommend_pic {
+	width: 100%;
+	height: 100%;
+}
+
+.chaoshi_banner_wrapper {
+	position: relative;
+	z-index: 2;
+	height: 550px;
+	background: rgb(246, 246, 246) none repeat scroll 0% 0%;
+}
+
+.chaoshi_banner_mid {
+	margin-left: 200px;
+	width: 780px;
+	height: 100%;
+}
+
+.chaoshi_carousel {
+	width: 780px;
+	height: 400px;
+	overflow: hidden;
+	font-size: 0px;
+	position: relative;
+}
+
+.chaoshi_carousel_main {
+	width: 780px;
+	height: 100%;
+	position: relative;
+}
+
+.chaoshi_carousel_item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
+.chaoshi_carousel_link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.chaoshi_carousel_img {
+	width: 780px;
+	height: 100%;
+}
+
+.chaoshi_carousel_next,
+.chaoshi_carousel_prev {
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	display: block;
+	width: 24px;
+	height: 60px;
+	line-height: 60px;
+	background: rgba(0, 0, 0, 0.21) none repeat scroll 0% 0%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: simsun;
+	color: rgb(255, 255, 255);
+	z-index: 5;
+}
+
+.chaoshi_carousel_next:hover,
+.chaoshi_carousel_prev:hover {
+	color: rgb(255, 161, 51);
+}
+
+.chaoshi_carousel_prev {
+	left: 0px;
+}
+
+.chaoshi_carousel_next {
+	right: 0px;
+}
+
+.chaoshi_carousel_nav {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 5;
+}
+
+.chaoshi_carousel_nav_btn {
+	float: left;
+	display: inline-block;
+	height: 5px;
+	background-color: rgb(74, 65, 16);
+	margin-right: 1px;
+	font-size: 0px;
+}
+
+.chaoshi_carousel_nav_btn_on {
+	background-color: rgb(236, 112, 2);
+}
+
+.chaoshi_carousel_nav_btn_last {
+	margin-right: 0px;
+}
+
+.chaoshi_bottom {
+	width: 100%;
+	height: 150px;
+	font-size: 0px;
+	overflow: hidden;
+}
+
+.chaoshi_bottom_item {
+	width: 50%;
+	height: 150px;
+}
+
+.chaoshi_bottom_link {
+	display: block;
+}
+
+.chaoshi_bottom_img,
+.chaoshi_bottom_link {
+	width: 100%;
+	height: 100%;
+}
+
+.chaoshi_right {
+	width: 200px;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.chaoshi_right_tt {
+	padding: 10px 0px;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgb(147, 75, 32);
+}
+
+.chaoshi_right_tt::after,
+.chaoshi_right_tt::before {
+	content: "";
+	margin: 0px 5px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 1px;
+	background: rgb(147, 75, 32) none repeat scroll 0% 0%;
+}
+
+.chaoshi_right_tip {
+	padding: 0px 0px 10px;
+	line-height: 1;
+	color: rgb(175, 111, 36);
+	opacity: 0.5;
+}
+
+.chaoshi_coupon {
+	padding: 0px 10px;
+	height: 275px;
+	background: rgba(0, 0, 0, 0) linear-gradient(180deg, rgb(255, 238, 198) 0px, rgb(255, 215, 167)) repeat scroll 0% 0%;
+}
+
+.chaoshi_coupon .chaoshi_right_tt {
+	padding: 20px 0px 7px;
+}
+
+.chaoshi_coupon_bd {
+	position: relative;
+	border-top: 4px solid rgb(255, 161, 51);
+	box-shadow: 0px 3px 9px rgba(255, 161, 51, 0.25);
+}
+
+.chaoshi_coupon_info {
+	display: block;
+	position: relative;
+	height: 114px;
+	padding-top: 30px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	text-align: left;
+}
+
+.chaoshi_coupon_info::after,
+.chaoshi_coupon_info::before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	bottom: 33px;
+	width: 8px;
+	height: 8px;
+	background: rgb(255, 222, 178) none repeat scroll 0% 0%;
+	border-radius: 8px;
+}
+
+.chaoshi_coupon_info::before {
+	left: -4px;
+}
+
+.chaoshi_coupon_info::after {
+	right: -4px;
+}
+
+.chaoshi_coupon_info_num1 {
+	height: 26px;
+	margin: 0px 15px 12px;
+	font-size: 26px;
+	color: rgb(104, 48, 10);
+	text-align: center;
+}
+
+.chaoshi_coupon_info_num1 em {
+	margin-left: 6px;
+	line-height: 26px;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.chaoshi_coupon_info_num2 {
+	height: 12px;
+	line-height: 12px;
+	margin: 0px 18px 23px;
+	color: rgb(95, 50, 17);
+	text-align: center;
+}
+
+.chaoshi_coupon_info_tip {
+	position: absolute;
+	bottom: 0px;
+	left: 2px;
+	width: 175px;
+	height: 36px;
+	line-height: 36px;
+	color: rgb(99, 52, 21);
+	text-align: center;
+	border-top: 3px dashed rgb(230, 230, 230);
+	overflow: hidden;
+}
+
+.chaoshi_coupon_more {
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.chaoshi_coupon_more:hover {
+	color: rgb(255, 255, 255);
+}
+
+.chaoshi_handy {
+	padding: 0px 10px;
+	height: 275px;
+	background: rgba(0, 0, 0, 0) linear-gradient(180deg, rgb(255, 242, 198) 0px, rgb(255, 222, 170)) repeat scroll 0% 0%;
+}
+
+.chaoshi_handy_carousel_main {
+	height: 185px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	border-radius: 8px;
+	box-shadow: 0px 6px 13px rgba(255, 160, 24, 0.26);
+}
+
+.chaoshi_handy_carousel_item {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	padding: 20px 0px;
+}
+
+.chaoshi_handy_carousel_link {
+	display: block;
+}
+
+.chaoshi_handy_carousel_img {
+	margin: 0px auto 20px;
+	width: 100px;
+	height: 100px;
+}
+
+.chaoshi_handy_carousel_enter {
+	display: inline-block;
+	width: 105px;
+	height: 25px;
+	line-height: 25px;
+	color: rgb(255, 255, 255);
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(255, 161, 51) 0px, rgb(255, 195, 51)) repeat scroll 0% 0%;
+}
+
+.chaoshi_handy_carousel_enter:hover {
+	color: rgb(255, 255, 255);
+}
+
+.chaoshi_handy_carousel_nav {
+	display: block;
+	font-size: 0px;
+	padding-top: 10px;
+	height: 18px;
+	overflow: hidden;
+}
+
+.chaoshi_handy_carousel_nav_btn {
+	display: inline-block;
+	margin: 0px 4px;
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+	border: 1px solid rgb(255, 222, 170);
+}
+
+.chaoshi_handy_carousel_nav_btn.on {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+	border-color: rgb(255, 161, 51);
+}
+
+.chaoshi_category_bd {
+	height: 485px;
+	overflow: hidden;
+}
+
+.chaoshi_category_focus {
+	position: relative;
+	width: 190px;
+	float: left;
+}
+
+.chaoshi_category_focus_pic {
+	display: block;
+}
+
+.chaoshi_category_focus img {
+	width: 190px;
+	height: 485px;
+}
+.guessYouLike>ul{
+	width:100%;
+	height: 242.5px;
+	display: flex;
+	justify-content: center;
+}
+.guessYouLike>ul>li{
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 0.5px solid lightgray;
+}
+.halfSection>ul{
+	width: 1000px;
+	height: 242.5px;
+	display: flex;
+	justify-content: center;
+	
+}
+.halfSection>ul>li{
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 0.5px solid lightgray;
+
+}
+
+.chaoshi_category_focus_key {
+	position: absolute;
+	bottom: 0px;
+	height: 133px;
+	padding: 20px 10px 12px;
+	background: rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%;
+}
+
+.chaoshi_category_focus_key_inner {
+	height: 133px;
+	overflow: hidden;
+}
+
+.chaoshi_category_goods .goods_item {
+	width: 159px;
+	height: 233px;
+	padding: 10px 20px 0px;
+	border-left: 1px solid rgb(242, 242, 242);
+	border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.chaoshi_category_goods .goods_title {
+	margin-bottom: 14px;
+	height: 36px;
+	display: -webkit-box;
+}
+
+.chaoshi_like {
+	min-height: 299px;
+}
+
+.chaoshi_lift {
+	width: 56px;
+	position: fixed;
+	left: 0px;
+	display: none;
+	z-index: 100;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	backface-visibility: hidden;
+}
+
+.chaoshi_lift_item {
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+}
+
+.chaoshi_lift_item_btn {
+	color: rgb(102, 102, 102);
+	cursor: pointer;
+	border-bottom: 1px solid rgb(243, 243, 243);
+	padding: 3px 0px;
+	display: block;
+	text-align: center;
+}
+
+.chaoshi_lift_item_btn_active .chaoshi_lift_item_btn {
+	color: rgb(255, 255, 255);
+}
+
+.chaoshi_lift_item_btn:hover,
+.chaoshi_lift_item_btn_active {
+	color: rgb(255, 255, 255);
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+}
+
+.chaoshi_lift_top .chaoshi_lift_item_btn {
+	background-color: rgb(255, 161, 51);
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 161, 51);
+}
+
+.chaoshi_lift_top .chaoshi_lift_item_btn:hover {
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 161, 51);
+}
+
+.chaoshi_lift_top {
+	border: 0px none;
+	background: rgb(255, 45, 84) none repeat scroll 0% 0%;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 0px;
+}
+
+.chaoshi_top {
+	display: none;
+}
+
+.chaoshi_category_focus_key a {
+	float: left;
+	width: 73px;
+	height: 24px;
+	margin: 0px 5px 8px;
+	line-height: 24px;
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	background: rgba(242, 242, 242, 0.2) none repeat scroll 0% 0%;
+	overflow: hidden;
+}
+
+.chaoshi_category_focus_key a:hover {
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 255, 255);
+}
+
+.chaoshi_category_goods {
+	margin-left: 190px;
+	background-color: rgb(255, 255, 255);
+}
+
+.chaoshi_category_goods .goods_item {
+	width: 159px;
+	height: 233px;
+	padding: 10px 20px 0px;
+	border-left: 1px solid rgb(242, 242, 242);
+	border-bottom: 1px solid rgb(242, 242, 242);
+}
+.goods_list_items {
+	float: left;
+	width: 1194px;
+}
+
+.goods_item {
+	position: relative;
+	float: left;
+	width: 199px;
+	height: 232px;
+	overflow: hidden;
+}
+
+.goods_pic {
+	display: block;
+	margin: 0px auto 10px;
+	width: 140px;
+	height: 140px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.goods_img {
+	min-width: 40%;
+	height: 140px;
+}
+
+.goods_title {
+	display: block;
+	font-size: 12px;
+	color: rgb(51, 51, 51);
+}
+
+.goods_desc,
+.goods_title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.goods_desc {
+	margin-bottom: 14px;
+	height: 18px;
+	color: rgb(153, 153, 153);
+	white-space: nowrap;
+	text-align: left;
+}
+
+.goods_item:hover .goods_desc,
+.goods_item:hover .goods_price_origin,
+.goods_item:hover .goods_title {
+	display: none;
+	float: none;
+}
+
+.goods_price {
+	font-size: 18px;
+	color: rgb(255, 0, 47);
+}
+
+.goods_add,
+.goods_item:hover .goods_price,
+.goods_item:hover .goods_priceall {
+	text-align: center;
+}
+
+.goods_add {
+	display: block;
+	position: absolute;
+	bottom: -60px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.goods_item .goods_add {
+	transition: bottom 0.25s ease 0s;
+}
+
+.goods_add_txt {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.goods_add_icon {
+	margin: 0px 6px 0px 0px;
+}
+
+.goods_item:hover .goods_add {
+	bottom: 0px;
+}
+
+.goods_add:hover {
+	color: rgb(255, 255, 255);
+}
+
+.cdb_add_icon,
+.cdi_add_icon,
+.goods_add_icon {
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../img/sprite_chaoshi_index@1x.png);
+	background-position: -21px -52px;
+	background-size: 118px 73px;
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+}
+
+.o2_retina .cdb_add_icon,
+.o2_retina .cdi_add_icon,
+.o2_retina .goods_add_icon {
+	background-image: url(../img/sprite_chaoshi_index@2x.png);
+	background-position: 0px -51px;
+	background-size: 116px 67px;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+
+.chaoshi_category_goods .goods_title {
+	margin-bottom: 14px;
+	height: 36px;
+	display: -webkit-box;
+}
+
+.chaoshi_like {
+	min-height: 299px;
+}
+
+.chaoshi_lift {
+	width: 56px;
+	position: fixed;
+	left: 0px;
+	display: none;
+	z-index: 100;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	backface-visibility: hidden;
+}
+
+.chaoshi_lift_item {
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+}
+
+.chaoshi_lift_item_btn {
+	color: rgb(102, 102, 102);
+	cursor: pointer;
+	border-bottom: 1px solid rgb(243, 243, 243);
+	padding: 3px 0px;
+	display: block;
+	text-align: center;
+}
+
+.chaoshi_lift_item_btn_active .chaoshi_lift_item_btn {
+	color: rgb(255, 255, 255);
+}
+
+.chaoshi_lift_item_btn:hover,
+.chaoshi_lift_item_btn_active {
+	color: rgb(255, 255, 255);
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+}
+
+.chaoshi_lift_top .chaoshi_lift_item_btn {
+	background-color: rgb(255, 161, 51);
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 161, 51);
+}
+
+.chaoshi_lift_top .chaoshi_lift_item_btn:hover {
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 161, 51);
+}
+
+.chaoshi_lift_top {
+	border: 0px none;
+	background: rgb(255, 45, 84) none repeat scroll 0% 0%;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 0px;
+}
+
+.chaoshi_top {
+	display: none;
+}
+.chaoshi_seckill {
+	min-height: 320px;
+	margin-bottom: 15px;
+	background: rgba(0, 0, 0, 0) url(../img/chaoshi_seckill_bg.png) no-repeat scroll center 0px;
+}
+
+.chaoshi_seckill_hd {
+	position: relative;
+	height: 70px;
+	line-height: 70px;
+	color: rgb(255, 255, 255);
+}
+
+.chaoshi_seckill_tit {
+	position: relative;
+	float: left;
+	margin-right: 15px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 78px;
+	height: 70px;
+	padding: 0px 0px 0px 52px;
+	color: rgb(51, 51, 51);
+	letter-spacing: 1px;
+}
+
+.chaoshi_seckill_tit::before {
+	content: "";
+	position: absolute;
+	left: 19px;
+	top: 50%;
+	margin-top: -5px;
+	background-image: url(../img/sprite_chaoshi_index@1x.png);
+	background-position: 0px -52px;
+	background-size: 118px 73px;
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 21px;
+}
+
+.chaoshi_seckill_list {
+	float: left;
+	width: 990px;
+	height: 250px;
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);
+}
+
+.chaoshi_seckill_item {
+	float: left;
+	width: 164px;
+	height: 100%;
+	padding: 0px 14px 0px 19px;
+	border-right: 1px solid rgb(230, 230, 230);
+}
+
+.chaoshi_seckill_item.last {
+	border-right: medium none;
+}
+
+.chaoshi_seckill_item .csi_pic {
+	position: relative;
+	text-align: center;
+}
+
+.chaoshi_seckill_item .csi_pic_lk {
+	display: block;
+	outline: 0px none;
+}
+
+.chaoshi_seckill_item .csi_img {
+	width: 130px;
+	height: 130px;
+	margin: 17px 0px;
+	transition: -webkit-transform 0.4s ease 0s;
+	transform: translateZ(0px);
+}
+
+.chaoshi_seckill_item .csi_pic_lk:hover .csi_img {
+	transform: translateY(-5px);
+}
+
+.chaoshi_seckill_item .csi_name {
+	color: rgb(51, 51, 51);
+	max-width: 100%;
+	margin-bottom: 12px;
+	height: 36px;
+	text-align: left;
+	overflow-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	transition: -webkit-transform 0.4s ease 0s;
+}
+
+.chaoshi_seckill_item .csi_pic_lk:hover .csi_name {
+	color: rgb(255, 161, 51);
+}
+
+.chaoshi_seckill_item .csi_price {
+	white-space: nowrap;
+}
+
+.chaoshi_seckill_item .csi_price_new {
+	display: inline-block;
+	width: 95px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-right: 5px;
+	color: rgb(255, 0, 47);
+}
+
+.chaoshi_seckill_item .csi_price_origin {
+	display: inline-block;
+	color: rgb(153, 153, 153);
+	font-size: 12px;
+}
+
+.chaoshi_seckill_more {
+	float: right;
+	width: 200px;
+	height: 250px;
+}
+
+.chaoshi_seckill_more img {
+	min-width: 200px;
+	min-height: 250px;
+}
+
+.chaoshi_seckill_time {
+	float: left;
+	height: 70px;
+}
+
+.chaoshi_seckill_time_tip {
+	float: left;
+	margin: 33px 25px 0px 0px;
+	padding-left: 15px;
+	line-height: 14px;
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	border-left: 1px solid rgb(51, 51, 51);
+}
+
+.chaoshi_seckill_time_main {
+	float: left;
+}
+
+.chaoshi_seckill .time_item {
+	position: relative;
+	float: left;
+	width: 48px;
+	height: 35px;
+	background-color: rgb(54, 39, 70);
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+	font-family: Arial;
+	font-weight: 700;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 21px;
+	letter-spacing: 12px;
+	text-indent: 5px;
+}
+
+.chaoshi_seckill .time_item::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -1px;
+	width: 2px;
+	height: 100%;
+	background: rgb(239, 230, 221) none repeat scroll 0% 0%;
+}
+
+.chaoshi_seckill .time_split {
+	float: left;
+	margin: 35px 4px 0px;
+	width: 2px;
+	height: 6px;
+	font-size: 0px;
+	line-height: 0;
+}
+
+.chaoshi_seckill .time_split_dot {
+	display: block;
+	width: 2px;
+	height: 2px;
+	border-radius: 100%;
+	background: rgb(54, 39, 70) none repeat scroll 0% 0%;
+}
+
+.chaoshi_seckill .time_split_top {
+	margin-bottom: 4px;
+}
+
+.chaoshi_seckill .time_split_bottom {
+	top: 30px;
+}
+
+.o2_retina .chaoshi_seckill_tit::before {
+	background-image: url(../img/sprite_chaoshi_index@1x.png);
+	background-position: 0px -52px;
+	background-size: 118px 73px;
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 21px;
+}
+
+.chaoshi_discount_listwrap::before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-width: 10px;
+	border-style: solid dashed dashed solid;
+	border-color: rgb(254, 149, 45) transparent transparent rgb(254, 149, 45);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	overflow: hidden;
+}
+
+.chaoshi_discount_listwrap::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	width: 990px;
+	height: 10px;
+	background: rgba(0, 0, 0, 0) url(../img/chaoshi_discount_line.png) no-repeat scroll 0px 0px;
+}
+
+.chaoshi_discount {
+	min-height: 575px;
+	margin-bottom: 25px;
+}
+
+.chaoshi_discount_big .cdb_ft_l::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent transparent rgb(255, 255, 255);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	overflow: hidden;
+}
+
+.o2data-lazyload.chaoshi_rec {
+	min-height: 140px;
+}
+
+.chaoshi_brand {
+	min-height: 605px;
+	margin-bottom: 15px;
+}
+
+.chaoshi_buy {
+	min-height: 315px;
+	margin-bottom: 15px;
+	margin-top: 30px;
+}
+
+.chaoshi_category {
+	margin-bottom: 15px;
+	min-height: 540px;
+	margin-top: 40px;
+}
+
+.chaoshi_like {
+	min-height: 299px;
+}
+
+.chaoshi_lift {
+	width: 56px;
+	position: fixed;
+	left: 0px;
+	display: none;
+	z-index: 100;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	backface-visibility: hidden;
+}
+
+.chaoshi_lift_item {
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+}
+
+.chaoshi_lift_item_btn {
+	color: rgb(102, 102, 102);
+	cursor: pointer;
+	border-bottom: 1px solid rgb(243, 243, 243);
+	padding: 3px 0px;
+	display: block;
+	text-align: center;
+}
+
+.chaoshi_lift_item_btn:hover,
+.chaoshi_lift_item_btn_active {
+	color: rgb(255, 255, 255);
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+}
+
+.chaoshi_lift_top .chaoshi_lift_item_btn {
+	background-color: rgb(255, 161, 51);
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 161, 51);
+}
+
+.chaoshi_lift_top .chaoshi_lift_item_btn:hover {
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 161, 51);
+}
+
+.chaoshi_lift_top {
+	border: 0px none;
+	background: rgb(255, 45, 84) none repeat scroll 0% 0%;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 0px;
+}
+
+.chaoshi_top {
+	display: none;
+}
+
+.locationAndSearch #search-2014 {
+	width: 450px;
+	margin-right: 0px;
+}
+
+.locationAndSearch #search-2014 .text {
+	width: 360px;
+}
+
+.locationAndSearch #search-2014 .form {
+	width: 450px;
+}
+
+.locationAndSearch #search-2014 .button {
+	width: 80px;
+}
+
+.locationAndSearch #settleup-2014 {
+	margin-left: 30px;
+	float: left;
+}
+
+.locationAndSearch #shelper {
+	width: 448px;
+}
+
+.headerqrcode {
+	position: relative;
+	display: none;
+	margin-top: 27px;
+	float: right;
+	margin-left: 30px;
+	width: 120px;
+}
+
+.headerqrcode_lk {
+	text-align: center;
+	border: 1px solid rgb(223, 223, 223);
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	background: rgb(249, 249, 249) none repeat scroll 0% 0%;
+	position: relative;
+	padding-left: 30px;
+}
+
+.headerqrcode_lk:hover {
+	color: rgb(102, 102, 102);
+}
+
+.headerqrcode_ico {
+	width: 25px;
+	height: 25px;
+	background: rgba(0, 0, 0, 0) url(../img/qrcode_25x25.png) no-repeat scroll 0% 0%;
+	position: absolute;
+	top: 5px;
+	left: 8px;
+}
+
+.headerqrcode_ico,
+.headerqrcode_txt {
+	display: inline-block;
+}
+
+.headerqrcode_qc {
+	position: absolute;
+	border: 1px solid rgb(223, 223, 223);
+	width: 108px;
+	padding: 5px;
+	text-align: center;
+	z-index: 100;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+	top: 35px;
+}
+
+.headerqrcode:hover .headerqrcode_qc {
+	opacity: 1;
+	visibility: visible;
+}
+
+.headerqrcode_qcimg {
+	width: 110px;
+	height: 110px;
+}
+
+.headerqrcode_qcimg img {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0) url(../img/loading_001.gif) no-repeat scroll 50% center !important;
+}
+
+.headerqrcode_arrow {
+	position: absolute;
+	display: none;
+	left: 62px;
+	top: -16px;
+}
+
+.headerqrcode_arrow_bd,
+.headerqrcode_arrow_bg {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	border: 8px dashed transparent;
+}
+
+.headerqrcode_arrow_bg {
+	border-bottom: 8px solid rgb(255, 255, 255);
+	top: 1px;
+}
+
+.headerqrcode_arrow_bd {
+	border-bottom: 8px solid rgb(195, 195, 195);
+}
+
+.o2_retina .headerqrcode_ico {
+	background-size: 25px 25px;
+	background-image: url(../img/qrcode_25x25@2x.png);
+}
+
+
+
+.jdm-tbar-panel-header .close-panel,
+.jdm-tbar-panel-header i,
+.jdm-toolbar-tab .tab-ico,
+.jdm-toolbar-tab .tab-tip,
+.jdm-toolbar-tabs .tabs-tip .ico {
+	display: inline-block;
+	background-image: url(../img/toolbars.png);
+	background-repeat: no-repeat;
+}
+
+.i-loading {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/loading_002.gif);
+	background-repeat: no-repeat;
+}
+
+
+.jdm-toolbar-footer {
+	position: absolute;
+	bottom: -1px;
+	width: 100%;
+	left: -29px;
+}
+
+.jdm-toolbar-footer .jdm-toolbar-tab .tab-text {
+	width: 50px;
+}
+
+.jdm-toolbar-tab {
+	position: relative;
+	width: 35px;
+	height: 35px;
+	margin-bottom: 1px;
+	cursor: pointer;
+	background-color: rgb(122, 110, 110);
+	border-radius: 3px 0px 0px 3px;
+}
+
+.jdm-toolbar-tab .tab-ico {
+	width: 34px;
+	height: 35px;
+	margin-left: 1px;
+	position: relative;
+	z-index: 2;
+	background-color: rgb(122, 110, 110);
+}
+
+.jdm-toolbar-tab .tab-text {
+	width: 62px;
+	height: 35px;
+	line-height: 35px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-family: "微软雅黑";
+	position: absolute;
+	z-index: 1;
+	left: 35px;
+	top: 0px;
+	background-color: rgb(122, 110, 110);
+	border-radius: 3px 0px 0px 3px;
+	transition: left 0.3s ease-in-out 0.1s;
+}
+
+.jdm-toolbar-tab .tab-sub {
+	position: absolute;
+	z-index: 3;
+	right: 2px;
+	top: -5px;
+	height: 11px;
+	padding: 1px 2px;
+	border: 1px solid rgb(182, 29, 29);
+	overflow: hidden;
+	color: rgb(255, 255, 255);
+	font: 11px/11px verdana;
+	text-align: center;
+	min-width: 11px;
+	border-radius: 10px;
+	background-color: rgb(204, 96, 96);
+	background-image: linear-gradient(to bottom, rgb(204, 96, 96) 0px, rgb(182, 29, 29) 100%);
+}
+
+.jdm-toolbar-tab .tab-tip {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	width: 6px;
+	height: 6px;
+	background-position: -150px -150px;
+	z-index: 999;
+}
+
+.jdm-tbar-tab-jdvip .tab-ico {
+	background-position: -88px -175px;
+}
+
+.jdm-tbar-tab-cart .tab-ico {
+	background-position: -50px 0px;
+}
+
+.jdm-tbar-tab-follow .tab-ico {
+	background-position: -50px -50px;
+}
+
+.jdm-tbar-tab-history .tab-ico {
+	background-position: -50px -100px;
+}
+
+.jdm-tbar-tab-jimi .tab-ico {
+	background-position: -50px -150px;
+}
+
+.jdm-tbar-panel-jimi .jdm-tbar-panel-header i {
+	width: 18px;
+	height: 19px;
+	margin-top: 10px;
+	background-position: 0px -150px;
+}
+
+.jdm-tbar-panel-jimi .jdm-tbar-panel-content {
+	overflow: hidden;
+}
+
+.jdm-tbar-panel-jdvip .jdm-tbar-panel-header i {
+	width: 18px;
+	height: 19px;
+	margin-top: 10px;
+	background-position: -94px -211px;
+}
+
+.jdm-tbar-tab-message .tab-ico {
+	background-position: -190px -150px;
+}
+
+.jdm-tbar-tab-top .tab-ico {
+	background-position: -50px -250px;
+}
+
+.jdm-tbar-tab-feedback .tab-ico {
+	background-position: -50px -300px;
+}
+
+.jdm-tbar-panel-ad .jdm-tbar-panel-content {
+	overflow: hidden;
+}
+
+.chaoshi_discount_listwrap {
+	position: relative;
+	float: left;
+	width: 990px;
+	height: 250px;
+	overflow: visible;
+}
+
+.chaoshi_discount_listwrap::before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border-width: 10px;
+	border-style: solid dashed dashed solid;
+	border-color: rgb(254, 149, 45) transparent transparent rgb(254, 149, 45);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	overflow: hidden;
+}
+
+.chaoshi_discount_listwrap::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	width: 990px;
+	height: 10px;
+	background: rgba(0, 0, 0, 0) url(../img/chaoshi_discount_line.png) no-repeat scroll 0px 0px;
+}
+
+.chaoshi_discount_list {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+}
+
+.chaoshi_discount_item {
+	position: relative;
+	float: left;
+	width: 164px;
+	height: 100%;
+	padding: 0px 14px 0px 19px;
+	border-right: 1px solid rgb(230, 230, 230);
+}
+
+.chaoshi_discount_item .cdi_pic {
+	position: relative;
+	text-align: center;
+}
+
+.chaoshi_discount_item .cdi_pic_lk {
+	display: block;
+	outline: 0px none;
+}
+
+.chaoshi_discount_item .cdi_img {
+	width: 130px;
+	height: 130px;
+	margin: 17px 0px;
+	transition: -webkit-transform 0.4s ease 0s;
+}
+
+.chaoshi_discount_item .cdi_pic_lk:hover .cdi_img {
+	transform: translateY(-5px);
+}
+
+.chaoshi_discount_item .cdi_name {
+	color: rgb(51, 51, 51);
+	max-width: 100%;
+	margin-bottom: 12px;
+	height: 36px;
+	text-align: left;
+	overflow-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	transition: -webkit-transform 0.4s ease 0s;
+}
+
+.chaoshi_discount_item .cdi_pic_lk:hover .cdi_name {
+	color: rgb(255, 161, 51);
+}
+
+.chaoshi_discount_item .cdi_price {
+	white-space: nowrap;
+}
+.seven_img{
+	width: 80px;
+	height: 150px;
+}
+
+.chaoshi_discount_item .cdi_price_new {
+	display: inline-block;
+	width: 95px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-right: 5px;
+	color: rgb(255, 0, 47);
+}
+
+.chaoshi_discount {
+	min-height: 575px;
+	margin-bottom: 25px;
+}
+
+.chaoshi_discount .cdi_name {
+	display: block;
+	height: 18px;
+	white-space: nowrap;
+	margin-bottom: 2px;
+}
+
+.chaoshi_discount .cdi_promote {
+	height: 18px;
+	margin-bottom: 12px;
+}
+#five_one_section{
+	float: right;
+}
+#five_two_section{
+	float: left;
+}
+.chaoshi_brand_more{
+	display:block;
+	float: right;
+}
+.chaoshi_brand_more {
+	float: left;
+	position: relative;
+	z-index: 2;
+	width: 190px;
+	height: 270px;
+}
+
+.chaoshi_brand {
+	min-height: 605px;
+	margin-bottom: 15px;
+}
+
+.chaoshi_brand_row {
+	margin-bottom: 10px;
+}
+
+.chaoshi_brand_today {
+	float: left;
+	width: 390px;
+	height: 270px;
+}
+
+.chaoshi_brand_today img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s ease 0s;
+}
+
+.chaoshi_brand_today img:hover {
+	transform: translateY(-5px);
+}
+
+.chaoshi_brand_list {
+	float: left;
+}
+
+.chaoshi_brand_item {
+	float: left;
+	margin: 0px 0px 0px 10px;
+	width: 190px;
+	height: 270px;
+}
+
+.chaoshi_brand_item img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s ease 0s;
+}
+
+.chaoshi_brand_item img:hover {
+	transform: translateY(-5px);
+}
+
+.chaoshi_brand_small {
+	width: 1000px;
+}
+
+.chaoshi_brand_small .chaoshi_brand_item {
+	margin: 0px 10px 0px 0px;
+}
+
+.chaoshi_brand_more img {
+	margin-left: -20px;
+	min-height: 270px;
+}
+
+.chaoshi_discount_big .cdb_item {
+	position: relative;
+	float: left;
+	width: 388px;
+	margin: 0px 2px;
+	margin-bottom: 10px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	border: 1px solid rgb(242, 242, 242);
+}
+
+.chaoshi_discount_big .cdb_item.last {
+	margin-right: 0px;
+}
+
+.chaoshi_discount_big .cdb_bd {
+	position: relative;
+	padding: 20px 40px 0px 190px;
+	height: 168px;
+}
+
+.chaoshi_discount_big .cdb_pic {
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: 18px;
+	width: 150px;
+	height: 150px;
+}
+
+.chaoshi_discount_big .cdb_pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.chaoshi_discount_big .cdb_logo {
+	display: block;
+	margin-bottom: 13px;
+	width: auto;
+	height: 36px;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% !important;
+}
+
+.chaoshi_discount_big .cdb_name {
+	height: 36px;
+	margin-bottom: 4px;
+	color: rgb(51, 51, 51);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	transition: color 0.25s ease 0s;
+}
+
+.chaoshi_discount_big .cdb_name:hover {
+	color: rgb(255, 161, 51);
+}
+
+/*.chaoshi_discount_big .cdb_promote1 {*/
+	/*height: 18px;*/
+	/*white-space: nowrap;*/
+	/*text-overflow: ellipsis;*/
+	/*margin-bottom: 10px;*/
+	/*color: rgb(153, 153, 153);*/
+/*}*/
+
+.chaoshi_discount_big .cdb_promote2 {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 0px 15px;
+	max-height: 36px;
+	color: rgb(255, 161, 51);
+	background: rgb(255, 245, 234) none repeat scroll 0% 0%;
+	overflow: hidden;
+}
+
+.chaoshi_discount_big .cdb_ft_l {
+	position: relative;
+	float: left;
+	padding-left: 29px;
+	width: 204px;
+	height: 60px;
+	background: rgb(247, 95, 60) none repeat scroll 0% 0%;
+}
+
+
+
+.chaoshi_discount_big .cdb_ft_r {
+	float: right;
+	width: 155px;
+	height: 60px;
+}
+
+.chaoshi_discount_big .cdb_price {
+	padding-top: 10px;
+	margin-bottom: 4px;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+
+
+.chaoshi_discount_big .cdb_price.nosalenum {
+	padding-top: 21px;
+}
+
+.chaoshi_discount_big .cdb_add {
+	bottom: -60px;
+	line-height: 60px;
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.chaoshi_discount_big .cdb_add:hover {
+	color: rgb(255, 255, 255);
+}
+
+.chaoshi_discount_big .cdb_add_txt {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.chaoshi_discount_big .cdb_add_icon {
+	margin: 0px 6px 0px 0px;
+}
+
+.chaoshi_discount_small {
+	position: relative;
+	border-top: 1px solid rgb(230, 230, 230);
+}
+
+.chaoshi_discount_small .cdi_name {
+	display: block;
+	height: 18px;
+	white-space: nowrap;
+}
+
+.chaoshi_discount_small .cdi_add {
+	position: absolute;
+	right: 14px;
+	bottom: 16px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: rgb(255, 161, 51) none repeat scroll 0% 0%;
+}
+
+.chaoshi_discount_more {
+	position: relative;
+	z-index: 2;
+	float: right;
+	width: 200px;
+	height: 259px;
+}
+
+.cdb_add_icon,
+.cdi_add_icon,
+.goods_add_icon {
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../img/sprite_chaoshi_index@1x.png);
+	background-position: -21px -52px;
+	background-size: 118px 73px;
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+}
+
+
+.chaoshi_discount_more img {
+	margin-left: -20px;
+	min-width: 200px;
+	min-height: 259px;
+}
+.chaoshi_mod_head {
+	overflow: hidden;
+	padding: 0px 0px 20px;
+	height: 35px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 35px;
+}
+.chaoshi_mod_head_title {
+	display: inline;
+	padding: 0px 50px;
+	background-color: rgb(246, 246, 246);
+	font-weight: 400;
+	font-size: 26px;
+	color: rgb(51, 51, 51);
+	/*margin-top:50px;*/
+}
+
+
+
+.mobile_pop_item {
+	position: relative;
+	z-index: 5;
+	padding: 15px 0px;
+	border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.mobile_pop_device_lk {
+	background-image: url(../img/sprite_mobile@1x.png);
+}
+
+.mobile_pop_qrcode {
+	position: absolute;
+	left: 5px;
+	top: 14px;
+	width: 74px;
+	height: 74px;
+	border: 1px solid rgb(204, 204, 204);
+	background-color: rgb(247, 247, 247);
+}
+
+.mobile_pop_qrcode img {
+	width: 70px;
+	height: 70px;
+	margin: 2px 0px 0px 2px;
+}
+
+.mobile_pop_info {
+	margin: 0px 10px 0px 86px;
+	min-height: 70px;
+}
+
+.mobile_pop_tit {
+	font-size: 12px;
+	line-height: 17px;
+	color: rgb(102, 102, 102) !important;
+}
+
+.mobile_pop_tit a {
+	color: rgb(102, 102, 102) !important;
+}
+
+.mobile_pop_value {
+	margin: 3px 0px;
+	line-height: 14px;
+	color: rgb(241, 2, 20);
+}
+
+.mobile_pop_device {
+	overflow: hidden;
+	height: 25px;
+}
+
+.mobile_pop_device_lk {
+	overflow: hidden;
+	float: left;
+	margin-right: 2px;
+	width: 25px;
+	height: 25px;
+	text-indent: -999px;
+}
+
+.mobile_pop_device_ios {
+	background-position: 0px 0px;
+}
+
+.mobile_pop_device_and {
+	background-position: 0px -26px;
+}
+
+.mobile_pop_device_pad {
+	background-position: 0px -52px;
+}
+
+#discount_ul_container{
+	display: flex;
+	justify-content: center;
+
+
+}
+#scroll_hot_goods_container{
+	width: 100%;
+	height: 290px;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+}
+#scroll_hot_goods_container_sectionOne{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#scroll_hot_goods_container_sectionTwo{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 100%;
+}
+/*.chaoshi_carousel_item_on{
+	display: none;
+}*/
+#scroll_hot_goods_container_sectionOne>ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	
+}
+#scroll_hot_goods_container_sectionTwo>ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	
+}
+.item_hot_goods{
+	position: relative;
+	width: 16.6667%;
+	height: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.item_seven_goods{
+	position: relative;
+	width: 25%;
+	height: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.hot_goods_span{
+	font-size: 13px;
+}
+.item_hot_goods:hover .hot_goods_intoVan{
+	bottom: 0;
+}
+.item_hot_goods:hover .price_hotGoods_show{
+	display: none;
+}
+.item_hot_goods:hover .price_hotGoods{
+	display: none;
+}
+.item_hot_goods:hover .price_hotGoods{
+	display: inline;
+}
+.item_hot_goods:hover .hot_goods_span{
+	display: none;
+}
+.item_hot_goods>div>img{
+	width: 100%;
+}
+
+
+/*
+ */
+.item_seven_goods:hover .hot_seven_intoVan{
+	bottom: 0;
+}
+.item_seven_goods:hover .price_hotGoods_show{
+	display: none;
+}
+.item_seven_goods:hover .price_hotGoods{
+	display: none;
+}
+.item_seven_goods:hover .price_hotGoods{
+	display: inline;
+}
+.item_seven_goods:hover .hot_goods_span{
+	display: none;
+}
+.item_seven_goods>div>img{
+	width: 100%;
+}
+.price_hotGoods{
+	color: red;
+	display: none;
+}
+.price_hotGoods_show{
+	color: red;
+}
+.hot_goods_intoVan{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	line-height: 56px;
+	background-color: rgb(255,161,51);
+	transition-duration: 0.2s;
+	position: absolute;
+	bottom: -60px;
+}
+.hot_seven_intoVan{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: rgb(255,161,51);
+	transition-duration: 0.2s;
+	position: absolute;
+	bottom: -50px;
+}
+
+#nav {
+	position: fixed;
+	background-color: white;
+	opacity: 0.8;
+	top: 2px;
+	left: 5px;
+	width: 55px;
+	border: 1px solid gray;
+	display: none;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li.last {
+	background: orangered;
+	color: white;
+
+}
+
+#nav ul li {
+	width: 55px;
+	height: 22px;
+	text-align: center;
+	line-height: 25px;
+	border-bottom: dashed 1px gray;
+	position: relative;
+}
+
+#nav ul li span.active {
+	width: 55px;
+	height: 22px;
+	background: white;
+	color: orangered;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#nav ul li span {
+	display: none;
+	width: 55px;
+	cursor: pointer;
+}
+
+#nav ul li:hover span {
+	display: block;
+	background: orangered;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

@@ -1,0 +1,84 @@
+.sprite{
+    background-image: url("../img/sprite.png");
+}
+.kongtiao2 {
+    background-position: 1px -282px;
+}
+.kongtiao1 {
+    background-position: 1px -310px;
+}
+
+
+.xiyiji2 {
+    background-position: 1px -338px;
+}
+.xiyiji1 {
+    background-position: 1px -366px;
+}
+
+
+.dianshi2{
+    background-position: 2px -85px;
+}
+.dianshi1{
+    background-position: 2px -253px;
+}
+
+
+.chuwei2 {
+    background-position: 1px -394px;
+}
+.chuwei1 {
+    background-position: 1px -422px;
+}
+
+
+.xiaodian2{
+    background-position: 1px -449px;
+}
+.xiaodian1{
+    background-position: 2px -113px;
+}
+
+
+.shdq2{
+    background-position: 2px -141px;
+}
+.shdq1{
+    background-position: 1px -170px;
+}
+
+.ghdq2{
+    background-position: 1px -197px;
+}
+.ghdq1{
+    background-position: 1px -225px;
+}
+
+.arrowRight {
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    background-position: 0px 0px;
+}
+.baohu {  background-position: 1px -300px;  }
+.tui {  background-position: -6px -614px;  }
+.huan {  background-position: 1px -300px;  }
+.wuliyou {  background-position: -6px -566px;  }
+.jiuhuanxin {  background-position: -6px -517px;  }
+.baoyang {  background-position: -6px -772px;  }
+.jieneng {  background-position: -6px -820px;  }
+.anzhuang {  background-position: -6px -1107px;  }
+.qiye {  background-position: -6px -963px;  }
+.bangzhu {  background-position: 1px -300px;  }
+.zhaoshang {  background-position: 1px -300px;  }
+.more {  background-position: -6px -660px;  }
+
+.kefuzixun {  background-position: 5px -736px;  }
+
+
+
+
+

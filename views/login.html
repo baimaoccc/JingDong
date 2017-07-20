@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet/less" href="css/login.less">
+	</head>
+
+	<body>
+		<main>
+			<section id="top">
+				<a href="/main"><span style="background-image: url('login/welcome.png')"></span></a>
+				<span>欢迎登录</span>
+				<i></i>
+				<a href="" id="wenjuan">登录页面，调查问卷</a>
+			</section>
+			<div id="mid">
+				<img id="loginBackGround" src="login/loginBack.png">
+				<section id="box">
+					<div id="title">
+						<span>扫码登录</span>
+						<span>账户登录</span>
+					</div>
+					<section id="qr_code" class="inner">
+						<div style="background-image: url('login/qr_code.png')"></div>
+						<div id="qr_help" style="background-image: url('login/qr_help.png')"></div>
+						<div>
+							<p>打开
+								<a href="">手机京东</a>&#x3000;扫描二维码</p>
+							<i></i><em>免输入</em>&#x3000;
+							<i></i><em>更快</em>&#x3000;
+							<i></i><em>更安全</em>
+						</div>
+					</section>
+					<section id="accountLogin" class="inner">
+						<!--TODO-->
+						<form action="http://localhost:3000/login" method="post">
+							<section>
+								<span for="name" id="labelAccount" style="background-image: url('login/sprite.png')"></span>
+								<input id="name" name="name" type="text" placeholder="邮箱/用户名/已验证手机" required>
+							</section>
+							<section style="margin-top: 30px">
+								<span for="psw" id="labelPwd" style="background-image: url('login/sprite.png')"></span>
+								<input id="psw" name="psw" type="text" placeholder="密码" required>
+							</section>
+							<p>忘记密码</p>
+							<button type="submit">登&#x3000;&#x3000;录</button>
+						</form>
+					</section>
+					<div id="footer">
+						<i></i><em style="margin-left: 5px">QQ</em>
+						<i></i><em style="margin-left: 5px">微信</em>
+						<i></i><a href="/toregister"><em id="lijizhuce">立即注册</em></a>
+					</div>
+				</section>
+			</div>
+			<footer>
+				<p>
+					<a href="">关于我们</a>&#x3000;|&#x3000;
+					<a href="">联系我们</a>&#x3000;|&#x3000;
+					<a href="">人才招聘</a>&#x3000;|&#x3000;
+					<a href="">商家入驻</a>&#x3000;|&#x3000;
+					<a href="">广告服务</a>&#x3000;|&#x3000;
+					<a href="">手机京东</a>&#x3000;|&#x3000;
+					<a href="">友情链接</a>&#x3000;|&#x3000;
+					<a href="">销售联盟</a>&#x3000;|&#x3000;
+					<a href="">京东社区</a>&#x3000;|&#x3000;
+					<a href="">京东公益</a>&#x3000;|&#x3000;
+					<a href="">English Site</a>
+				</p>
+				<p> Copyright © 2004-2017  京东JD.com 版权所有 </p>
+			</footer>
+		</main>
+		<script src="js/jquery.js"></script>
+		<script src="js/less.min.js"></script>
+		<script src="js/login.js"></script>
+
+		<script type="text/javascript">
+			$("form").submit(function(e) {
+				e.preventDefault();
+				$.post(
+					"http://localhost:3000/login",
+					$(this).serialize(),
+					function(data) {
+						console.log(data);
+						if(data.code == "success") {
+							console.log(data.msg);
+							location.href = "http://localhost:3000/main";
+						} else {
+							alert(data.msg);
+						}
+					}
+				)
+
+			})
+		</script>
+	</body>
+
+</html>

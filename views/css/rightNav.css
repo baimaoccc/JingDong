@@ -1,0 +1,124 @@
+.sk_mod_er {
+	width: 40px;
+	position: fixed;
+	left: 50%;
+	bottom: 25%;
+	z-index: 100;
+	
+	
+}
+.sk_mod_er>ul{
+	list-style: none;
+}
+.sk_mod_er_item {
+	list-style: none;
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+.sk_mod_er_item a {
+	cursor: pointer;
+	border-bottom: 1px solid rgb(220, 220, 220);
+	width: 30px;
+	padding: 10px 0px;
+	display: inline-block;
+}
+
+.sk_mod_er_item a:hover {
+	color: rgb(224, 29, 34);
+}
+
+.sk_mod_er_top {
+	border: 0px none;
+	background: rgb(224, 29, 34) none repeat scroll 0% 0%;
+	position: relative;
+	z-index: 1;
+	margin-top: -1px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+.sk_mod_er_top a {
+	line-height: 1.2;
+	vertical-align: top;
+	color: rgb(255, 255, 255);
+	border: 0px none;
+	height: 45px;
+	padding: 0px;
+	width: 100%;
+	display: inline-block;
+}
+
+.sk_mod_er_top a:hover {
+	background-color: rgb(208, 19, 24);
+}
+
+.sk_mod_er_top_arrow {
+	font-size: 0px;
+	margin-top: 10px;
+	display: inline-block;
+	background-image: url(../img/img-icon/sprite.png);
+	background-position: -869px -198px;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 6px;
+}
+
+.sk_mod_er_top span {
+	display: block;
+}
+
+.sk_mod_er_mobile {
+	margin-top: 3px;
+	background: rgb(224, 29, 34) none repeat scroll 0% 0%;
+	text-align: center;
+	position: relative;
+}
+
+.sk_mod_er_mobile_a {
+	width: 100%;
+	padding: 0px;
+	height: 45px;
+	position: relative;
+	display: inline-block;
+}
+
+.sk_mod_er_mobile_a:hover {
+	background-color: rgb(208, 19, 24);
+}
+
+.sk_mod_er_mobile_mb {
+	background-position: -226px -289px;
+	width: 22px;
+	height: 30px;
+	margin-top: 6px;
+	display: inline-block;
+}
+
+.sk_mod_er_mobile_close,
+.sk_mod_er_mobile_mb {
+	background-image: url(../img/img-icon/sprite.png);
+	background-repeat: no-repeat;
+	font-size: 0px;
+}
+
+.sk_mod_er_mobile_close {
+	background-position: -809px -198px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	z-index: 1;
+	top: 7px;
+	right: 7px;
+	border: 0px none;
+	padding: 0px;
+	transition: transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s, -moz-transform 0.25s ease 0s;
+	display: none;
+}
+
+.sk_mod_er_mobile_close:hover {
+	transform: rotate(180deg);
+}
